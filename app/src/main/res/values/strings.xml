@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Electro</string>
+
+    <!-- Navigation Bar -->
+    <string name="tool_bar_charger">Charger</string>
+    <string name="tool_bar_service">Service</string>
+    <string name="tool_bar_add_car">Car</string>
+    <string name="tool_bar_you">You</string>
+
+    <!-- Default List -->
+    <string name="list_id">Id</string>
+    <string name="list_country">Country</string>
+    <string name="list_city">City</string>
+    <string name="list_street">Street</string>
+    <string name="list_zip_code">Zip code</string>
+
+    <!-- List of Chargers -->
+    <string name="list_chargers_code">Code</string>
+
+    <!-- List of Services -->
+    <string name="list_services_name">Name</string>
+
+    <!-- Add Car Form -->
+    <string name="form_add_car_logo">Add Car</string>
+    <string name="form_add_car_input">VIN code</string>
+    <string name="form_add_car_btn">Add</string>
+
+    <!-- Change Language -->
+    <string name="optional_bar_language">Language</string>
+
+    <!-- Login & Registration Form -->
+    <string name="form_email">Email</string>
+    <string name="form_password">Password</string>
+    <string name="form_register_firstName">First name</string>
+    <string name="form_register_lastName">Last name</string>
+    <string name="form_btn_login">Login</string>
+    <string name="form_btn_register">Register</string>
+    <string name="form_login">Login</string>
+    <string name="form_registration">Registration</string>
+    <string name="form_question_login">Do you have an account?</string>
+    <string name="form_question_register">Don\'t have an account?</string>
+</resources>

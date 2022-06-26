@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Electro</string>
+
+    <!-- Navigation Bar -->
+    <string name="tool_bar_charger">Зарядки</string>
+    <string name="tool_bar_service">СТО</string>
+    <string name="tool_bar_add_car">Авто</string>
+    <string name="tool_bar_you">Ви</string>
+
+    <!-- Default List -->
+    <string name="list_id">Id</string>
+    <string name="list_country">Країна</string>
+    <string name="list_city">Місто</string>
+    <string name="list_street">Вулиця</string>
+    <string name="list_zip_code">Поштовий індекс</string>
+
+    <!-- List of Chargers -->
+    <string name="list_chargers_code">Код</string>
+
+    <!-- List of Services -->
+    <string name="list_services_name">Назва</string>
+
+    <!-- Add Car Form -->
+    <string name="form_add_car_logo">Додати електромобіль</string>
+    <string name="form_add_car_input">VIN код</string>
+    <string name="form_add_car_btn">Додати</string>
+
+    <!-- Change Language -->
+    <string name="optional_bar_language">Мова</string>
+
+    <!-- Login & Registration Form -->
+    <string name="form_email">Електронна пошта</string>
+    <string name="form_password">Пароль</string>
+    <string name="form_register_firstName">Ім\'я</string>
+    <string name="form_register_lastName">Прізвище</string>
+    <string name="form_btn_login">Увійти</string>
+    <string name="form_btn_register">Зареєструватися</string>
+    <string name="form_login">Авторизація</string>
+    <string name="form_registration">Реєстрація</string>
+    <string name="form_question_login">У Вас є обліковий запис?</string>
+    <string name="form_question_register">У Вас немає облікового запису?</string>
+</resources>
