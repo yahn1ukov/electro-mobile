@@ -38,6 +38,4 @@
     <string name="form_btn_register">Зареєструватися</string>
     <string name="form_login">Авторизація</string>
     <string name="form_registration">Реєстрація</string>
-    <string name="form_question_login">У Вас є обліковий запис?</string>
-    <string name="form_question_register">У Вас немає облікового запису?</string>
 </resources>

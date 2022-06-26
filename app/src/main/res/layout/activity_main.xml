@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,8 +7,8 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp">
 
@@ -19,20 +18,21 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="50dp"
+            android:textStyle="bold"
             android:text="@string/form_registration"
             android:textAllCaps="true"
-            android:textColor="@color/black"
+            android:textColor="@color/purple"
             android:textSize="26sp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/form_register_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:hint="@string/form_email"
             app:endIconMode="clear_text"
-            android:layout_marginBottom="10dp"
-            app:startIconDrawable="@drawable/ic_baseline_alternate_email_24"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:startIconDrawable="@drawable/ic_baseline_alternate_email_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -43,13 +43,13 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/form_register_first_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:hint="@string/form_register_firstName"
             app:endIconMode="clear_text"
-            android:layout_marginBottom="10dp"
-            app:startIconDrawable="@drawable/ic_baseline_person_24"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -60,13 +60,13 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/form_register_last_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/form_register_lastName"
             android:layout_marginBottom="10dp"
+            android:hint="@string/form_register_lastName"
             app:endIconMode="clear_text"
-            app:startIconDrawable="@drawable/ic_baseline_person_24"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -77,13 +77,13 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/form_register_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:endIconMode="password_toggle"
-            android:hint="@string/form_password"
             android:layout_marginBottom="10dp"
-            app:startIconDrawable="@drawable/ic_baseline_lock_24"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:hint="@string/form_password"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -100,29 +100,22 @@
             android:text="@string/form_btn_register" />
 
         <LinearLayout
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20dp">
-
-            <TextView
-                android:id="@+id/form_question_login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textSize="17sp"
-                android:text="@string/form_question_login"
-                android:layout_marginEnd="10dp"/>
 
             <TextView
                 android:id="@+id/form_login_link"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/form_login"
                 android:textAllCaps="true"
-                android:textColor="@color/purple_700"
-                android:textStyle="bold"
+                android:drawablePadding="5dp"
+                android:textColor="@color/purple"
                 android:textSize="17sp"
-                android:text="@string/form_login" />
+                android:textStyle="bold"
+                app:drawableEndCompat="@drawable/ic_baseline_arrow_forward_24" />
 
         </LinearLayout>
 
