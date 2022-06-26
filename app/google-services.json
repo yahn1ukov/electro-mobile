@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "530414109571",
+    "project_id": "electro-test-e1eb8",
+    "storage_bucket": "electro-test-e1eb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530414109571:android:dc0b1567186487e2e92cb6",
+        "android_client_info": {
+          "package_name": "ua.nure.andrii.yahniukov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530414109571-n0e4rl0pufvhqihum54d7qbvl03q4861.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_3O0Myf7JcFPwTFGaDQatP7aUc-hWNdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530414109571-n0e4rl0pufvhqihum54d7qbvl03q4861.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
