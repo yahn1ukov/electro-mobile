@@ -31,7 +31,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:hint="@string/form_email"
-            app:endIconMode="clear_text"
             app:startIconDrawable="@drawable/ic_baseline_alternate_email_24">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -48,7 +47,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:hint="@string/form_register_firstName"
-            app:endIconMode="clear_text"
             app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -65,7 +63,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:hint="@string/form_register_lastName"
-            app:endIconMode="clear_text"
             app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText

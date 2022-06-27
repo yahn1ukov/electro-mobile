@@ -4,7 +4,6 @@
         <item
             android:id="@+id/screen_chargers"
             android:title="@string/nav_menu_chargers"
-            android:checked="true"
             android:icon="@drawable/ic_baseline_battery_charging_full_24"/>
         <item
             android:id="@+id/screen_services"
@@ -18,6 +17,10 @@
             android:id="@+id/screen_you"
             android:title="@string/nav_menu_you"
             android:icon="@drawable/ic_baseline_person_24"/>
+        <item
+            android:id="@+id/dialog_language"
+            android:title="@string/nav_menu_language"
+            android:icon="@drawable/ic_baseline_language_24"/>
         <item
             android:id="@+id/action_logout"
             android:title="@string/nav_menu_logout"
