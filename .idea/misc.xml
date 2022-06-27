@@ -3,8 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.344" />
+        <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/drawable/ic_baseline_flash_on_24.xml" value="0.344" />
+        <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/layout/activity_add_car.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/layout/activity_base_drawer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/layout/activity_charger.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/layout/activity_drawer_base.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/layout/activity_login.xml" value="0.28532608695652173" />
         <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/layout/activity_main.xml" value="0.28532608695652173" />
+        <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/layout/activity_registration.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/layout/activity_service.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/layout/activity_user.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/layout/content_menu_layout.xml" value="0.365625" />
+        <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/layout/header_navigation_drawer.xml" value="0.365625" />
+        <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/menu/nav_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/menu/navigation_drawer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andri/OneDrive/Desktop/Andrii/University/3_course/2_semester/APZ/electro/electromobile/app/src/main/res/menu/navigation_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

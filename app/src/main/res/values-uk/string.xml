@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Electro</string>
+    <!-- Messages -->
+    <string name="exit_msg">Ви хочете вийти?</string>
+
+    <!-- Dialog Window -->
+    <string name="dialog_accept">Прийняти</string>
+    <string name="dialog_cancel">Скасувати</string>
+    <string name="dialog_decline">Відхилення</string>
 
     <!-- Navigation Bar -->
-    <string name="tool_bar_charger">Зарядки</string>
-    <string name="tool_bar_service">СТО</string>
-    <string name="tool_bar_add_car">Авто</string>
-    <string name="tool_bar_you">Ви</string>
+    <string name="nav_menu_chargers">Зарядні станції</string>
+    <string name="nav_menu_services">СТО</string>
+    <string name="nav_menu_add_car">Додати електромобіль</string>
+    <string name="nav_menu_you">Ви</string>
+    <string name="nav_menu_logout">Вийти</string>
 
     <!-- Default List -->
     <string name="list_id">Id</string>

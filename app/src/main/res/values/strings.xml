@@ -1,11 +1,23 @@
 <resources>
-    <string name="app_name">Electro</string>
+    <string name="app_name" translatable="false">Electro</string>
+    <string name="app_email" translatable="false">electro.support@electro.com</string>
+
+    <!-- Messages -->
+    <string name="exit_msg">Do you want to exit?</string>
+
+    <!-- Dialog Window -->
+    <string name="dialog_accept">Accept</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_decline">Decline</string>
 
     <!-- Navigation Bar -->
-    <string name="tool_bar_charger">Charger</string>
-    <string name="tool_bar_service">Service</string>
-    <string name="tool_bar_add_car">Car</string>
-    <string name="tool_bar_you">You</string>
+    <string name="nav_menu_chargers">Chargers</string>
+    <string name="nav_menu_services">Services</string>
+    <string name="nav_menu_add_car">Add car</string>
+    <string name="nav_menu_you">You</string>
+    <string name="nav_menu_logout">Exit</string>
+    <string name="nav_menu_open" translatable="false">Nav menu open</string>
+    <string name="nav_menu_close" translatable="false">Nav menu close</string>
 
     <!-- Default List -->
     <string name="list_id">Id</string>
