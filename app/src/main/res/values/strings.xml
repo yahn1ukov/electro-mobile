@@ -9,6 +9,7 @@
     <string name="dialog_accept">Accept</string>
     <string name="dialog_cancel">Cancel</string>
     <string name="dialog_decline">Decline</string>
+    <string name="dialog_language">Language</string>
 
     <!-- Navigation Bar -->
     <string name="nav_menu_chargers">Chargers</string>

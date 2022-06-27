@@ -1,6 +1,8 @@
 package ua.nure.andrii.yahniukov.activities.navigation
 
 import android.content.Intent
+import android.content.res.Resources
+import android.util.DisplayMetrics
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import android.view.View
@@ -15,8 +17,14 @@ import ua.nure.andrii.yahniukov.activities.screens.AddCarActivity
 import ua.nure.andrii.yahniukov.activities.screens.ChargerActivity
 import ua.nure.andrii.yahniukov.activities.screens.ServiceActivity
 import ua.nure.andrii.yahniukov.activities.screens.UserActivity
+import java.util.*
 
 open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+
+    companion object {
+        var checkedItem = 0
+        val  listOfLanguages = arrayOf("English", "Українська")
+    }
 
     override fun setContentView(view: View?) {
         val navigationDrawerLayout = layoutInflater.inflate(R.layout.activity_drawer_base, null) as DrawerLayout
@@ -62,16 +70,36 @@ open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigation
                 startActivity(Intent(this, UserActivity::class.java))
                 overridePendingTransition(0, 0)
             }
+            R.id.dialog_language -> MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.dialog_language)
+                .setSingleChoiceItems(listOfLanguages, checkedItem) { _, which ->
+                    checkedItem = which
+                }
+                .setNeutralButton(R.string.dialog_cancel) { dialog, _ ->
+                    dialog.cancel()
+                }
+                .setPositiveButton(R.string.dialog_accept) { _, _ ->
+                    when(checkedItem) {
+                        0 -> {
+                            setLocal("en")
+                        }
+                        1 -> {
+                            setLocal("uk")
+                        }
+                        else -> {
+                            setLocal("en")
+                        }
+
+                    }
+                }
+                .show()
             R.id.action_logout -> MaterialAlertDialogBuilder(this)
                 .setTitle(R.string.nav_menu_logout)
                 .setMessage(R.string.exit_msg)
-                .setNeutralButton(resources.getString(R.string.dialog_cancel)) { dialog, _ ->
+                .setNeutralButton(R.string.dialog_cancel) { dialog, _ ->
                     dialog.cancel()
                 }
-                .setNegativeButton(resources.getString(R.string.dialog_decline)) { dialog, _ ->
-                    dialog.dismiss()
-                }
-                .setPositiveButton(resources.getString(R.string.dialog_accept)) { _, _ ->
+                .setPositiveButton(R.string.dialog_accept) { _, _ ->
                     finish()
                 }
                 .show()
@@ -81,5 +109,16 @@ open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigation
 
     protected fun allocatedActivityTitle(titleString : String) {
         supportActionBar?.title = titleString
+    }
+
+    private fun setLocal(language: String) {
+        val locale = Locale(language)
+        Locale.setDefault(locale)
+        val res : Resources = resources
+        val metrics : DisplayMetrics = res.displayMetrics
+        val config = res.configuration
+        config.setLocale(Locale(language))
+        res.updateConfiguration(config, metrics)
+        onConfigurationChanged(config)
     }
 }
