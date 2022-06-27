@@ -49,4 +49,13 @@
         app:layout_constraintStart_toEndOf="@+id/list_cars_item_name"
         app:layout_constraintTop_toTopOf="@+id/list_cars_item_name" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_first_name_button"
+        style="@style/Widget.AppTheme.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_baseline_delete_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
