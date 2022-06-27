@@ -34,6 +34,11 @@
     <!-- List of Services -->
     <string name="list_services_name">Name</string>
 
+    <!-- List of Cars -->
+    <string name="list_cars_vin_code">VIN code</string>
+    <string name="list_cars_name">Name</string>
+    <string name="list_cars_model">Model</string>
+
     <!-- Add Car Form -->
     <string name="form_add_car_logo">Add Car</string>
     <string name="form_add_car_input">VIN code</string>

@@ -30,6 +30,11 @@
     <!-- List of Services -->
     <string name="list_services_name">Назва</string>
 
+    <!-- List of Cars -->
+    <string name="list_cars_vin_code">VIN код</string>
+    <string name="list_cars_name">Назва</string>
+    <string name="list_cars_model">Модель</string>
+
     <!-- Add Car Form -->
     <string name="form_add_car_logo">Додати електромобіль</string>
     <string name="form_add_car_input">VIN код</string>
