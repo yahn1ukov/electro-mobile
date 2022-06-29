@@ -35,7 +35,7 @@
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/list_charger_item_id"
-            app:layout_constraintTop_toTopOf="list_charger_item_id" />
+            app:layout_constraintTop_toTopOf="@+id/list_charger_item_id" />
 
         <TextView
             android:id="@+id/list_charger_item_country"

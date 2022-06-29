@@ -52,6 +52,7 @@ open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigation
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
             R.id.screen_chargers -> {
+                finish()
                 startActivity(Intent(this, ChargerActivity::class.java))
                 overridePendingTransition(0, 0)
             }
@@ -81,13 +82,16 @@ open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigation
                 .setPositiveButton(R.string.dialog_accept) { _, _ ->
                     when(checkedItem) {
                         0 -> {
-                            setLocal("en")
+                            setLocal("en", item.itemId)
+                            recreate()
                         }
                         1 -> {
-                            setLocal("uk")
+                            setLocal("uk", item.itemId)
+                            recreate()
                         }
                         else -> {
-                            setLocal("en")
+                            setLocal("en", item.itemId)
+                            recreate()
                         }
 
                     }
@@ -111,7 +115,7 @@ open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigation
         supportActionBar?.title = titleString
     }
 
-    private fun setLocal(language: String) {
+    private fun setLocal(language: String, screenId : Int) {
         val locale = Locale(language)
         Locale.setDefault(locale)
         val res : Resources = resources
@@ -120,5 +124,27 @@ open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigation
         config.setLocale(Locale(language))
         res.updateConfiguration(config, metrics)
         onConfigurationChanged(config)
+        when(screenId) {
+            0 -> {
+                val refresh = Intent(this, ChargerActivity::class.java)
+                finish()
+                startActivity(refresh)
+            }
+            1 -> {
+                val refresh = Intent(this, ServiceActivity::class.java)
+                finish()
+                startActivity(refresh)
+            }
+            2 -> {
+                val refresh = Intent(this, AddCarActivity::class.java)
+                finish()
+                startActivity(refresh)
+            }
+            3 -> {
+                val refresh = Intent(this, UserActivity::class.java)
+                finish()
+                startActivity(refresh)
+            }
+        }
     }
 }

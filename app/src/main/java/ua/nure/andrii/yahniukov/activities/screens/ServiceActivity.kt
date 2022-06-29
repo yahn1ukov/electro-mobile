@@ -21,7 +21,7 @@ class ServiceActivity : DrawerBaseActivity() {
 
         val data = ArrayList<ServicesViewModel>()
 
-        data.add(ServicesViewModel(1L, "ASDF7AS98F7S9D7F", "Ukraine", "Kharkiv", "St. Podeda 59a"))
+        data.add(ServicesViewModel(1L, "Electro B-1", "Ukraine", "Kharkiv", "St. Podeda 59a"))
 
         val adapter = ServicesAdapter(data)
 

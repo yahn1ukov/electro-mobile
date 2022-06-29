@@ -14,26 +14,33 @@
         android:theme="@style/Theme.Electromobile"
         tools:targetApi="31">
         <activity
-            android:name=".DrawerBaseActivity"
-            android:exported="false" />
+            android:name=".activities.navigation.DrawerBaseActivity"
+            android:exported="false"
+            android:configChanges="locale|orientation"/>
         <activity
             android:name=".activities.screens.UserActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:configChanges="locale|orientation"/>
         <activity
             android:name=".activities.screens.AddCarActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:configChanges="locale|orientation"/>
         <activity
             android:name=".activities.screens.ServiceActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:configChanges="locale|orientation"/>
         <activity
             android:name=".activities.screens.ChargerActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:configChanges="locale|orientation"/>
         <activity
             android:name=".activities.authentication.LoginActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:configChanges="locale|orientation"/>
         <activity
             android:name=".activities.authentication.RegistrationActivity"
-            android:exported="true">
+            android:exported="true"
+            android:configChanges="locale|orientation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,60 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:layout_marginBottom="20dp"
+    app:strokeColor="@color/purple"
+    app:strokeWidth="1dp">
 
-    <TextView
-        android:id="@+id/list_cars_item_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/list_id"
-        android:textColor="@color/purple"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="7dp">
 
-    <TextView
-        android:id="@+id/list_cars_item_vin_code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/list_cars_vin_code"
-        android:textColor="@color/purple"
-        android:layout_marginStart="5dp"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/list_cars_item_id"
-        app:layout_constraintTop_toTopOf="@+id/list_cars_item_id" />
+        <TextView
+            android:id="@+id/list_car_item_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_id"
+            android:textColor="@color/purple"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/list_cars_item_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/list_cars_name"
-        android:layout_marginTop="5dp"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/list_cars_item_id"
-        app:layout_constraintTop_toBottomOf="@+id/list_cars_item_id" />
+        <TextView
+            android:id="@+id/list_car_item_vin_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/list_cars_vin_code"
+            android:textColor="@color/purple"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/list_car_item_id"
+            app:layout_constraintTop_toTopOf="@+id/list_car_item_id" />
 
-    <TextView
-        android:id="@+id/list_cars_item_model"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/list_cars_model"
-        android:textSize="15sp"
-        android:layout_marginStart="5dp"
-        app:layout_constraintStart_toEndOf="@+id/list_cars_item_name"
-        app:layout_constraintTop_toTopOf="@+id/list_cars_item_name" />
+        <TextView
+            android:id="@+id/list_car_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/list_cars_name"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/list_car_item_id"
+            app:layout_constraintTop_toBottomOf="@+id/list_car_item_id" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/save_first_name_button"
-        style="@style/Widget.AppTheme.Button.IconButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:icon="@drawable/ic_baseline_delete_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/list_car_item_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/list_cars_model"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/list_car_item_name"
+            app:layout_constraintTop_toTopOf="@+id/list_car_item_name" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -52,4 +52,8 @@
     <string name="form_btn_register">Зареєструватися</string>
     <string name="form_login">Авторизація</string>
     <string name="form_registration">Реєстрація</string>
+
+    <!-- User Profile -->
+    <string name="user_welcome">Доброго дня,</string>
+
 </resources>
