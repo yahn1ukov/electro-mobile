@@ -12,12 +12,13 @@ import ua.nure.andrii.yahniukov.models.ServicesViewModel
 class ServiceActivity : DrawerBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val activityServiceBinding : ActivityServiceBinding = ActivityServiceBinding.inflate(layoutInflater)
+        val activityServiceBinding: ActivityServiceBinding =
+            ActivityServiceBinding.inflate(layoutInflater)
         setContentView(activityServiceBinding.root)
         allocatedActivityTitle(resources.getString(R.string.nav_menu_services))
 
         val servicesRecyclerView = findViewById<RecyclerView>(R.id.servicesRecyclerView)
-        servicesRecyclerView.layoutManager = LinearLayoutManager(this)
+        servicesRecyclerView.layoutManager = LinearLayoutManager(this@ServiceActivity)
 
         val data = ArrayList<ServicesViewModel>()
 

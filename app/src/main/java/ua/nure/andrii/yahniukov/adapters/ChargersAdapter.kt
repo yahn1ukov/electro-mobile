@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import ua.nure.andrii.yahniukov.R
 import ua.nure.andrii.yahniukov.models.ChargersViewModel
 
-class ChargersAdapter(private val chargersList : List<ChargersViewModel>) :
+class ChargersAdapter(private val chargersList: List<ChargersViewModel>) :
     RecyclerView.Adapter<ChargersAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import ua.nure.andrii.yahniukov.R
 import ua.nure.andrii.yahniukov.models.ServicesViewModel
 
-class ServicesAdapter(private val servicesList : List<ServicesViewModel>) :
+class ServicesAdapter(private val servicesList: List<ServicesViewModel>) :
     RecyclerView.Adapter<ServicesAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

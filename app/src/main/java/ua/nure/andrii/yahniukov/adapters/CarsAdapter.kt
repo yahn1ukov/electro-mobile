@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import ua.nure.andrii.yahniukov.R
 import ua.nure.andrii.yahniukov.models.CarsViewModel
 
-class CarsAdapter(private val carsList : List<CarsViewModel>) :
+class CarsAdapter(private val carsList: List<CarsViewModel>) :
     RecyclerView.Adapter<CarsAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

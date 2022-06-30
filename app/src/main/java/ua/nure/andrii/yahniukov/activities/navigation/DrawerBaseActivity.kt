@@ -4,10 +4,10 @@ import android.content.Intent
 import android.content.res.Resources
 import android.util.DisplayMetrics
 import android.view.MenuItem
-import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import android.widget.FrameLayout
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -19,24 +19,29 @@ import ua.nure.andrii.yahniukov.activities.screens.ServiceActivity
 import ua.nure.andrii.yahniukov.activities.screens.UserActivity
 import java.util.*
 
-open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+open class DrawerBaseActivity : AppCompatActivity(),
+    NavigationView.OnNavigationItemSelectedListener {
 
     companion object {
         var checkedItem = 0
-        val  listOfLanguages = arrayOf("English", "Українська")
+        val listOfLanguages = arrayOf("English", "Українська")
     }
 
     override fun setContentView(view: View?) {
-        val navigationDrawerLayout = layoutInflater.inflate(R.layout.activity_drawer_base, null) as DrawerLayout
-        val frameLayoutContainer = navigationDrawerLayout.findViewById<FrameLayout>(R.id.activityConstraint)
+        val navigationDrawerLayout =
+            layoutInflater.inflate(R.layout.activity_drawer_base, null) as DrawerLayout
+        val frameLayoutContainer =
+            navigationDrawerLayout.findViewById<FrameLayout>(R.id.activityConstraint)
         frameLayoutContainer.addView(view)
         super.setContentView(navigationDrawerLayout)
 
-        val navigationToolbar : Toolbar = navigationDrawerLayout.findViewById(R.id.navigation_toolbar)
+        val navigationToolbar: Toolbar =
+            navigationDrawerLayout.findViewById(R.id.navigation_toolbar)
         setSupportActionBar(navigationToolbar)
 
-        val navigationView : NavigationView = navigationDrawerLayout.findViewById(R.id.navigation_view)
-        navigationView.setNavigationItemSelectedListener(this)
+        val navigationView: NavigationView =
+            navigationDrawerLayout.findViewById(R.id.navigation_view)
+        navigationView.setNavigationItemSelectedListener(this@DrawerBaseActivity)
 
         val actionBarDrawerToggle = ActionBarDrawerToggle(
             this,
@@ -50,25 +55,25 @@ open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigation
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when(item.itemId) {
+        when (item.itemId) {
             R.id.screen_chargers -> {
                 finish()
-                startActivity(Intent(this, ChargerActivity::class.java))
+                startActivity(Intent(this@DrawerBaseActivity, ChargerActivity::class.java))
                 overridePendingTransition(0, 0)
             }
             R.id.screen_services -> {
                 finish()
-                startActivity(Intent(this, ServiceActivity::class.java))
+                startActivity(Intent(this@DrawerBaseActivity, ServiceActivity::class.java))
                 overridePendingTransition(0, 0)
             }
             R.id.screen_add_car -> {
                 finish()
-                startActivity(Intent(this, AddCarActivity::class.java))
+                startActivity(Intent(this@DrawerBaseActivity, AddCarActivity::class.java))
                 overridePendingTransition(0, 0)
             }
             R.id.screen_you -> {
                 finish()
-                startActivity(Intent(this, UserActivity::class.java))
+                startActivity(Intent(this@DrawerBaseActivity, UserActivity::class.java))
                 overridePendingTransition(0, 0)
             }
             R.id.dialog_language -> MaterialAlertDialogBuilder(this)
@@ -80,7 +85,7 @@ open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigation
                     dialog.cancel()
                 }
                 .setPositiveButton(R.string.dialog_accept) { _, _ ->
-                    when(checkedItem) {
+                    when (checkedItem) {
                         0 -> {
                             setLocal("en", item.itemId)
                             recreate()
@@ -111,37 +116,37 @@ open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigation
         return false
     }
 
-    protected fun allocatedActivityTitle(titleString : String) {
+    protected fun allocatedActivityTitle(titleString: String) {
         supportActionBar?.title = titleString
     }
 
-    private fun setLocal(language: String, screenId : Int) {
+    private fun setLocal(language: String, screenId: Int) {
         val locale = Locale(language)
         Locale.setDefault(locale)
-        val res : Resources = resources
-        val metrics : DisplayMetrics = res.displayMetrics
+        val res: Resources = resources
+        val metrics: DisplayMetrics = res.displayMetrics
         val config = res.configuration
         config.setLocale(Locale(language))
         res.updateConfiguration(config, metrics)
         onConfigurationChanged(config)
-        when(screenId) {
+        when (screenId) {
             0 -> {
-                val refresh = Intent(this, ChargerActivity::class.java)
+                val refresh = Intent(this@DrawerBaseActivity, ChargerActivity::class.java)
                 finish()
                 startActivity(refresh)
             }
             1 -> {
-                val refresh = Intent(this, ServiceActivity::class.java)
+                val refresh = Intent(this@DrawerBaseActivity, ServiceActivity::class.java)
                 finish()
                 startActivity(refresh)
             }
             2 -> {
-                val refresh = Intent(this, AddCarActivity::class.java)
+                val refresh = Intent(this@DrawerBaseActivity, AddCarActivity::class.java)
                 finish()
                 startActivity(refresh)
             }
             3 -> {
-                val refresh = Intent(this, UserActivity::class.java)
+                val refresh = Intent(this@DrawerBaseActivity, UserActivity::class.java)
                 finish()
                 startActivity(refresh)
             }

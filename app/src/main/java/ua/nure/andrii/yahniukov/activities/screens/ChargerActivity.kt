@@ -12,12 +12,13 @@ import ua.nure.andrii.yahniukov.models.ChargersViewModel
 class ChargerActivity : DrawerBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val activityChargerBinding : ActivityChargerBinding = ActivityChargerBinding.inflate(layoutInflater)
+        val activityChargerBinding: ActivityChargerBinding =
+            ActivityChargerBinding.inflate(layoutInflater)
         setContentView(activityChargerBinding.root)
         allocatedActivityTitle(resources.getString(R.string.nav_menu_chargers))
 
         val chargersRecyclerView = findViewById<RecyclerView>(R.id.chargersRecyclerView)
-        chargersRecyclerView.layoutManager = LinearLayoutManager(this)
+        chargersRecyclerView.layoutManager = LinearLayoutManager(this@ChargerActivity)
 
         val data = ArrayList<ChargersViewModel>()
 
