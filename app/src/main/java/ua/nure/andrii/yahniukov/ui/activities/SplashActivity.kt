@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import ua.nure.andrii.yahniukov.R
 import ua.nure.andrii.yahniukov.api.AppPrefs
 import ua.nure.andrii.yahniukov.databinding.ActivitySplashBinding
 
@@ -16,7 +15,7 @@ class SplashActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_splash)
+        setContentView(binding.root)
 
         Handler(Looper.getMainLooper()).postDelayed(
             {

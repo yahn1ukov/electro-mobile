@@ -23,7 +23,7 @@ fun Context.forceSetLocale(targetLocale: Locale): Boolean {
 fun Context.isCurrentLocaleSet(targetLocale: Locale): Boolean {
     val actualLocale = ConfigurationCompat.getLocales(this.resources.configuration).get(0)
 
-    return actualLocale.toLanguageTag() == targetLocale.toLanguageTag()
+    return actualLocale?.toLanguageTag() == targetLocale.toLanguageTag()
 }
 
 @TargetApi(Build.VERSION_CODES.N)

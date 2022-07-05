@@ -1,4 +1,4 @@
-package ua.nure.andrii.yahniukov
+package ua.nure.andrii.yahniukov.ui
 
 import android.app.Application
 import android.content.Context

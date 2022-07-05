@@ -1,7 +1,7 @@
 package ua.nure.andrii.yahniukov.api
 
 import android.content.Context
-import ua.nure.andrii.yahniukov.ElectroApp
+import ua.nure.andrii.yahniukov.ui.ElectroApp
 import java.util.*
 
 class AppPrefs {
@@ -33,6 +33,6 @@ class AppPrefs {
     fun getSavedLocale(): Locale {
         val languageCode = getLanguageCode()
 
-        return languageCode?.let { Locale(it) } ?: Locale("en")
+        return languageCode?.let { Locale(it) } ?: Locale("uk")
     }
 }

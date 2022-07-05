@@ -4,8 +4,8 @@ import android.content.Context
 import android.content.res.Configuration
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import ua.nure.andrii.yahniukov.ElectroApp
 import ua.nure.andrii.yahniukov.extension.forceSetLocale
+import ua.nure.andrii.yahniukov.ui.ElectroApp
 
 abstract class BaseActivity : AppCompatActivity() {
     override fun attachBaseContext(newBase: Context?) {

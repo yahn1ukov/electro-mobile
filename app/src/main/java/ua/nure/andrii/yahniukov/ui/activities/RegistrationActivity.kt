@@ -4,11 +4,16 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import ua.nure.andrii.yahniukov.R
+import ua.nure.andrii.yahniukov.databinding.ActivityRegistrationBinding
 
 class RegistrationActivity : BaseActivity() {
+    private lateinit var binding: ActivityRegistrationBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registration)
+
+        binding = ActivityRegistrationBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val loginLinkBtn = findViewById<TextView>(R.id.form_login_link)
 

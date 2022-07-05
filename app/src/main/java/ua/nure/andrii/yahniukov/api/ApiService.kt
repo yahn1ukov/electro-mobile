@@ -35,11 +35,10 @@ private fun getOkHttpClient(): OkHttpClient {
 }
 
 private fun getConverterFactory(): Converter.Factory {
-    return GsonConverterFactory.create(
-        GsonBuilder()
-            .excludeFieldsWithoutExposeAnnotation()
-            .serializeNulls()
-            .setLenient()
-            .create()
-    )
+    val gson = GsonBuilder()
+        .excludeFieldsWithoutExposeAnnotation()
+        .serializeNulls()
+        .setLenient()
+        .create()
+    return GsonConverterFactory.create(gson)
 }
