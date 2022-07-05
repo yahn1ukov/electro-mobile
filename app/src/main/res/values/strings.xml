@@ -5,11 +5,8 @@
     <!-- Messages -->
     <string name="exit_msg">Do you want to exit?</string>
 
-    <!-- Dialog Window -->
-    <string name="dialog_accept">Accept</string>
-    <string name="dialog_cancel">Cancel</string>
-    <string name="dialog_decline">Decline</string>
-    <string name="dialog_language">Language</string>
+    <string name="language_english_name">English</string>
+    <string name="language_ukrainian_name">Ukrainian</string>
 
     <!-- Navigation Bar -->
     <string name="menu_navigation_chargers">Chargers</string>
@@ -59,5 +56,7 @@
 
     <!-- User Profile -->
     <string name="user_welcome">Welcome,</string>
+
+    <string name="btn_logout">Logout</string>
 
 </resources>

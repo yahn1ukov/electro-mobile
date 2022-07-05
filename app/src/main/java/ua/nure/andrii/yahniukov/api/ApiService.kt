@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit
 
 fun getApiService(): IApiService {
     return Retrofit.Builder()
-        .baseUrl("http://localhost:8080")
+        .baseUrl("https://bdbd-109-87-8-64.eu.ngrok.io/")
         .addConverterFactory(getConverterFactory())
         .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
         .client(getOkHttpClient())

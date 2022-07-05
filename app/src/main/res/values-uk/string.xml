@@ -3,14 +3,11 @@
     <!-- Messages -->
     <string name="exit_msg">Ви хочете вийти?</string>
 
-    <!-- Dialog Window -->
-    <string name="dialog_accept">Прийняти</string>
-    <string name="dialog_cancel">Скасувати</string>
-    <string name="dialog_decline">Відхилення</string>
-    <string name="dialog_language">Мова</string>
+    <string name="language_english_name">Англійська</string>
+    <string name="language_ukrainian_name">Українська</string>
 
     <!-- Navigation Bar -->
-    <string name="menu_navigation_chargers">Заряд. стнац.</string>
+    <string name="menu_navigation_chargers">Станції</string>
     <string name="menu_navigation_services">СТО</string>
     <string name="menu_navigation_add_car">Додати авто</string>
     <string name="menu_navigation_you">Ви</string>
@@ -57,5 +54,7 @@
 
     <!-- User Profile -->
     <string name="user_welcome">Доброго дня,</string>
+
+    <string name="btn_logout">Вийти</string>
 
 </resources>

@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/navigation_mobile">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_mobile"
+    app:startDestination="@id/navigation_home">
 
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="ua.nure.andrii.yahniukov.ui.chargers.ChargersFragment"
+        android:label="@string/menu_navigation_chargers"
+        tools:layout="@layout/fragment_chargers" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="ua.nure.andrii.yahniukov.ui.settings.SettingsFragment"
+        android:label="@string/menu_navigation_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>
