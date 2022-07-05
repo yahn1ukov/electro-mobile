@@ -10,12 +10,11 @@
     <string name="dialog_language">Мова</string>
 
     <!-- Navigation Bar -->
-    <string name="nav_menu_chargers">Зарядні станції</string>
-    <string name="nav_menu_services">СТО</string>
-    <string name="nav_menu_add_car">Додати електромобіль</string>
-    <string name="nav_menu_you">Ви</string>
-    <string name="nav_menu_language">Мова</string>
-    <string name="nav_menu_logout">Вийти</string>
+    <string name="menu_navigation_chargers">Заряд. стнац.</string>
+    <string name="menu_navigation_services">СТО</string>
+    <string name="menu_navigation_add_car">Додати авто</string>
+    <string name="menu_navigation_you">Ви</string>
+    <string name="menu_navigation_settings">Параметри</string>
 
     <!-- Default List -->
     <string name="list_id">Id</string>

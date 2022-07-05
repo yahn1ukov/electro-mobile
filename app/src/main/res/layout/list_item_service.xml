@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="5dp"
+    app:strokeColor="@color/purple"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/list_service_item_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_id"
+            android:textColor="@color/purple"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/list_service_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/list_services_name"
+            android:textColor="@color/purple"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/list_service_item_id"
+            app:layout_constraintTop_toTopOf="@+id/list_service_item_id" />
+
+        <TextView
+            android:id="@+id/list_service_item_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/list_country"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/list_service_item_id"
+            app:layout_constraintTop_toBottomOf="@+id/list_service_item_id" />
+
+        <TextView
+            android:id="@+id/list_service_item_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/list_city"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/list_service_item_country"
+            app:layout_constraintTop_toTopOf="@+id/list_service_item_country" />
+
+        <TextView
+            android:id="@+id/list_service_item_street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/list_street"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/list_service_item_city"
+            app:layout_constraintTop_toTopOf="@+id/list_service_item_city" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

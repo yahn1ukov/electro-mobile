@@ -12,14 +12,11 @@
     <string name="dialog_language">Language</string>
 
     <!-- Navigation Bar -->
-    <string name="nav_menu_chargers">Chargers</string>
-    <string name="nav_menu_services">Services</string>
-    <string name="nav_menu_add_car">Add car</string>
-    <string name="nav_menu_you">You</string>
-    <string name="nav_menu_language">Language</string>
-    <string name="nav_menu_logout">Exit</string>
-    <string name="nav_menu_open" translatable="false">Nav menu open</string>
-    <string name="nav_menu_close" translatable="false">Nav menu close</string>
+    <string name="menu_navigation_chargers">Chargers</string>
+    <string name="menu_navigation_services">Services</string>
+    <string name="menu_navigation_add_car">Add car</string>
+    <string name="menu_navigation_you">You</string>
+    <string name="menu_navigation_settings">Settings</string>
 
     <!-- Default List -->
     <string name="list_id">Id</string>
