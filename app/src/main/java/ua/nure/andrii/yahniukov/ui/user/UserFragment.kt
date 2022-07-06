@@ -42,6 +42,7 @@ class UserFragment : Fragment() {
         viewModel.getCurrentUser()
         viewModel.userLiveData.observe(viewLifecycleOwner) { user ->
             binding.userFullName.text = " " + user.fullName
+            binding.userEmail.text = " " + user.email
             binding.userCreated.text =
                 " " + SimpleDateFormat("dd-MM-yyyy").format(user.createdAt).toString()
         }

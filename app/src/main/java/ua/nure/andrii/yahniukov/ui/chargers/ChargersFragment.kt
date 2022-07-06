@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ua.nure.andrii.yahniukov.databinding.FragmentChargersBinding
@@ -49,7 +50,8 @@ class ChargersFragment : Fragment(), ChargersAdapterListener {
         _binding = null
     }
 
-    override fun onChargerTap(id: Long) {
-
+    override fun onChargerTap(chargerId: Long) {
+        val action = ChargersFragmentDirections.toNavigationCharger(chargerId)
+        findNavController().navigate(action)
     }
 }

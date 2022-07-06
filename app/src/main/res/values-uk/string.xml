@@ -4,6 +4,9 @@
     <!-- Titles -->
     <string name="title_chargers">Станції</string>
     <string name="title_services">СТО</string>
+    <string name="title_charger">Станція</string>
+    <string name="title_car">Електромобіль</string>
+    <string name="title_complaint">Скарга</string>
     <string name="title_you">Ви</string>
     <string name="title_cars">Електромобілі</string>
     <string name="title_add_car">Додати електромобіль</string>
@@ -24,16 +27,19 @@
     <string name="form_firstName">Ім\'я</string>
     <string name="form_lastName">Прізвище</string>
     <string name="form_add_car">VIN код</string>
+    <string name="form_complaint">Скарга</string>
 
     <!-- User Profile -->
     <string name="user_welcome">Доброго дня, </string>
     <string name="user_created">Створенний:</string>
+    <string name="user_email">Пошта:</string>
 
     <!-- Buttons -->
     <string name="btn_login">Увійти</string>
     <string name="btn_registration">Зареєструватися</string>
     <string name="btn_add_car">Додати</string>
     <string name="btn_logout">Вийти</string>
+    <string name="btn_apply">Подати</string>
 
     <!-- Links -->
     <string name="link_login">Увійти</string>

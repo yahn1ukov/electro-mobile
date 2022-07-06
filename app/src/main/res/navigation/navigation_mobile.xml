@@ -14,10 +14,11 @@
             android:id="@+id/to_navigation_charger"
             app:destination="@id/navigation_charger" />
     </fragment>
+
     <fragment
         android:id="@+id/navigation_charger"
         android:name="ua.nure.andrii.yahniukov.ui.charger.ChargerFragment"
-        android:label="@string/title_chargers"
+        android:label="@string/title_charger"
         tools:layout="@layout/fragment_charger">
         <argument
             android:name="chargerId"

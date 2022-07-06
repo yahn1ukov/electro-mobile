@@ -5,6 +5,9 @@
     <string name="title_chargers">Chargers</string>
     <string name="title_services">Services</string>
     <string name="title_cars">Cars</string>
+    <string name="title_charger">Charger</string>
+    <string name="title_car">Car</string>
+    <string name="title_complaint">Complaint</string>
     <string name="title_you">You</string>
     <string name="title_add_car">Add Car</string>
     <string name="title_login">Login</string>
@@ -24,16 +27,19 @@
     <string name="form_firstName">First name</string>
     <string name="form_lastName">Last name</string>
     <string name="form_add_car">VIN code</string>
+    <string name="form_complaint">Complaint</string>
 
     <!-- User Profile -->
     <string name="user_welcome">Welcome,</string>
     <string name="user_created">Created:</string>
+    <string name="user_email">Email:</string>
 
     <!-- Buttons -->
     <string name="btn_login">Login</string>
     <string name="btn_registration">Registration</string>
     <string name="btn_add_car">Add</string>
     <string name="btn_logout">Logout</string>
+    <string name="btn_apply">Apply</string>
 
     <!-- Links -->
     <string name="link_login">Login</string>

@@ -37,6 +37,9 @@ interface IAuthenticationApiService {
     @GET("api/v1/users/current/cars")
     fun getAllCars(): Single<List<CarResponse>>
 
+    @GET("api/v1/cars/{carId}")
+    fun getCar(@Path("carId") carId: Long): Single<CarResponse>
+
     @PATCH("api/v1/users/current/car/add")
     fun addCarToUser(@Body vinCode: CarRequest): Single<MessageResponse>
 

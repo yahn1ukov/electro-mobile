@@ -2,7 +2,6 @@ package ua.nure.andrii.yahniukov.ui.activities
 
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
@@ -11,7 +10,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import ua.nure.andrii.yahniukov.R
 import ua.nure.andrii.yahniukov.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

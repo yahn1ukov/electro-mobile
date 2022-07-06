@@ -21,54 +21,78 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:paddingTop="20dp"
-                android:orientation="vertical">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
 
                 <LinearLayout
-                    android:layout_height="match_parent"
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:gravity="center">
 
                     <TextView
-                        android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_welcome"
                         android:textColor="@color/purple"
-                        android:text="@string/user_welcome" />
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/user_full_name"
-                        android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:textSize="20sp"
+                        android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        tools:text=" User" />
+                        android:textSize="20sp"
+                        tools:text="User" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_height="match_parent"
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
                     android:gravity="center">
 
                     <TextView
-                        android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_email"
                         android:textColor="@color/black"
-                        android:text="@string/user_created" />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/user_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:text="Email" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_created"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/user_created"
-                        android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        tools:text=" Created" />
+                        android:textSize="16sp"
+                        tools:text="Created" />
 
                 </LinearLayout>
 

@@ -72,5 +72,5 @@ class ChargersAdapter(
 }
 
 interface ChargersAdapterListener {
-    fun onChargerTap(id: Long)
+    fun onChargerTap(chargerId: Long)
 }
