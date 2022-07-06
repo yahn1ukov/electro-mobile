@@ -2,12 +2,15 @@ package ua.nure.andrii.yahniukov.ui.activities
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.TextView
-import ua.nure.andrii.yahniukov.R
+import androidx.lifecycle.ViewModelProvider
 import ua.nure.andrii.yahniukov.databinding.ActivityRegistrationBinding
+import ua.nure.andrii.yahniukov.extension.showToast
+import ua.nure.andrii.yahniukov.ui.viewModels.RegistrationViewModel
 
 class RegistrationActivity : BaseActivity() {
     private lateinit var binding: ActivityRegistrationBinding
+
+    private lateinit var viewModel: RegistrationViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,12 +18,29 @@ class RegistrationActivity : BaseActivity() {
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val loginLinkBtn = findViewById<TextView>(R.id.form_login_link)
+        viewModel = ViewModelProvider(this)[RegistrationViewModel::class.java]
 
-        loginLinkBtn.setOnClickListener {
+        viewModel.registrationLiveData.observe(this) { response ->
+            binding.root.showToast(response.message)
+            val intent = Intent(this, LoginActivity::class.java).apply {
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            }
+            startActivity(intent)
+        }
+
+        binding.formRegistrationBtn.setOnClickListener {
+            viewModel.registration(
+                binding.formRegistrationEmail.text.toString(),
+                binding.formRegistrationFirstName.text.toString(),
+                binding.formRegistrationLastName.text.toString(),
+                binding.formRegistrationPassword.text.toString()
+            )
+        }
+
+        binding.formLoginLink.setOnClickListener {
             startActivity(
                 Intent(
-                    this@RegistrationActivity,
+                    this,
                     LoginActivity::class.java
                 )
             )

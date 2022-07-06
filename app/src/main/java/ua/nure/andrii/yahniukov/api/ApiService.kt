@@ -7,23 +7,35 @@ import retrofit2.Converter
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import ua.nure.andrii.yahniukov.api.services.IAuthenticationApiService
+import ua.nure.andrii.yahniukov.api.services.INoAuthenticationApiService
 import java.util.concurrent.TimeUnit
 
-fun getApiService(): IApiService {
+fun getNoAuthenticationApiService(): INoAuthenticationApiService {
     return Retrofit.Builder()
-        .baseUrl("https://bdbd-109-87-8-64.eu.ngrok.io/")
+        .baseUrl("https://066b-109-87-8-64.eu.ngrok.io/")
         .addConverterFactory(getConverterFactory())
         .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-        .client(getOkHttpClient())
         .build()
-        .create(IApiService::class.java)
+        .create(INoAuthenticationApiService::class.java)
 }
 
-private fun getOkHttpClient(): OkHttpClient {
+fun getAuthenticationApiService(): IAuthenticationApiService {
+    return Retrofit.Builder()
+        .baseUrl("https://066b-109-87-8-64.eu.ngrok.io/")
+        .addConverterFactory(getConverterFactory())
+        .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+        .client(getOkhttpClient())
+        .build()
+        .create(IAuthenticationApiService::class.java)
+}
+
+private fun getOkhttpClient(): OkHttpClient {
     val loggingInterceptor = HttpLoggingInterceptor()
     loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
 
     val headersInterceptor = HeadersInterceptor()
+
 
     return OkHttpClient.Builder()
         .connectTimeout(30, TimeUnit.SECONDS)

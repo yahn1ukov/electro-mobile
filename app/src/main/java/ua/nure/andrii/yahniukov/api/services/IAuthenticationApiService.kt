@@ -1,20 +1,12 @@
-package ua.nure.andrii.yahniukov.api
+package ua.nure.andrii.yahniukov.api.services
 
 import io.reactivex.Single
 import retrofit2.http.*
 import ua.nure.andrii.yahniukov.api.models.requests.CarRequest
 import ua.nure.andrii.yahniukov.api.models.requests.ComplaintRequest
-import ua.nure.andrii.yahniukov.api.models.requests.LoginRequest
-import ua.nure.andrii.yahniukov.api.models.requests.RegistrationRequest
 import ua.nure.andrii.yahniukov.api.models.responses.*
 
-interface IApiService {
-    @POST("api/v1/authentication/login")
-    fun login(@Body login: LoginRequest): Single<LoginResponse>
-
-    @POST("api/v1/authentication/registration/users")
-    fun registration(@Body register: RegistrationRequest): Single<MessageResponse>
-
+interface IAuthenticationApiService {
     @POST("api/v1/complaints/users/current/chargers/{chargerId}")
     fun createComplaintUserCharger(
         @Path("chargerId") chargerId: Long,

@@ -2,9 +2,7 @@ package ua.nure.andrii.yahniukov.ui.activities
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
-import ua.nure.andrii.yahniukov.R
 import ua.nure.andrii.yahniukov.databinding.ActivityLoginBinding
 import ua.nure.andrii.yahniukov.ui.viewModels.LoginViewModel
 
@@ -38,8 +36,6 @@ class LoginActivity : BaseActivity() {
             )
         }
 
-        val registerLinkBtn = findViewById<TextView>(R.id.form_registration_link)
-
-        registerLinkBtn.setOnClickListener { finish() }
+        binding.formRegistrationLink.setOnClickListener { finish() }
     }
 }

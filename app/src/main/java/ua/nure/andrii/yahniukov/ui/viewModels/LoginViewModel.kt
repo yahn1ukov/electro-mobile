@@ -7,12 +7,12 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.addTo
 import io.reactivex.schedulers.Schedulers
 import ua.nure.andrii.yahniukov.api.AppPrefs
-import ua.nure.andrii.yahniukov.api.getApiService
+import ua.nure.andrii.yahniukov.api.getNoAuthenticationApiService
 import ua.nure.andrii.yahniukov.api.models.requests.LoginRequest
 import ua.nure.andrii.yahniukov.api.models.responses.LoginResponse
 
 class LoginViewModel : ViewModel() {
-    private val apiService = getApiService()
+    private val apiService = getNoAuthenticationApiService()
     private val prefs = AppPrefs()
     val loginLiveData = MutableLiveData<Boolean>()
     private val compositeDisposable = CompositeDisposable()

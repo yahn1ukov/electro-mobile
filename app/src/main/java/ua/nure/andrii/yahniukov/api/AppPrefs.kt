@@ -33,6 +33,6 @@ class AppPrefs {
     fun getSavedLocale(): Locale {
         val languageCode = getLanguageCode()
 
-        return languageCode?.let { Locale(it) } ?: Locale("uk")
+        return languageCode?.let { Locale(it) } ?: Locale("en")
     }
 }

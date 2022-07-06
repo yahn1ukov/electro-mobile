@@ -11,7 +11,6 @@ class HeadersInterceptor : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         val builder = chain.request().newBuilder()
         val accessToken = prefs.getToken()
-        System.out.println(accessToken)
         builder.apply {
             addHeader("Authorization", "Bearer $accessToken")
             addHeader("Content-Type", "application/json")
