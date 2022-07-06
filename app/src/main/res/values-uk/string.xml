@@ -1,72 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Messages -->
-    <string name="exit_msg">Ви хочете вийти?</string>
 
+    <!-- Titles -->
+    <string name="title_chargers">Станції</string>
+    <string name="title_services">СТО</string>
+    <string name="title_you">Ви</string>
+    <string name="title_settings">Налаштування</string>
+    <string name="title_add_car">Додати електромобіль</string>
+    <string name="title_login">Вхід</string>
+    <string name="title_registration">Реєстрування</string>
+
+    <!-- Languages -->
     <string name="language_english_name">Англійська</string>
     <string name="language_ukrainian_name">Українська</string>
-
-    <!-- Navigation Bar -->
-    <string name="menu_navigation_chargers">Станції</string>
-    <string name="menu_navigation_services">СТО</string>
-    <string name="menu_navigation_add_car">Додати авто</string>
-    <string name="menu_navigation_you">Ви</string>
-    <string name="menu_navigation_settings">Параметри</string>
-
-    <!-- Default List -->
-    <string name="list_id">Id</string>
-    <string name="list_country">Країна</string>
-    <string name="list_city">Місто</string>
-    <string name="list_street">Вулиця</string>
-    <string name="list_zip_code">Поштовий індекс</string>
-
-    <!-- List of Chargers -->
-    <string name="list_chargers_code">Код</string>
-
-    <!-- List of Services -->
-    <string name="list_services_name">Назва</string>
-
-    <!-- List of Cars -->
-    <string name="list_cars_vin_code">VIN код</string>
-    <string name="list_cars_name">Назва</string>
-    <string name="list_cars_model">Модель</string>
-
-    <!-- Add Car Form -->
-    <string name="form_add_car_logo">Додати електромобіль</string>
-    <string name="form_add_car_input">VIN код</string>
-    <string name="form_add_car_btn">Додати</string>
-
-    <!-- Change Language -->
-    <string name="optional_bar_language">Мова</string>
 
     <!-- Login & Registration Form -->
     <string name="form_email">Електронна пошта</string>
     <string name="form_password">Пароль</string>
-    <string name="form_register_firstName">Ім\'я</string>
-    <string name="form_register_lastName">Прізвище</string>
-    <string name="form_btn_login">Увійти</string>
-    <string name="form_btn_register">Зареєструватися</string>
-    <string name="form_login">Авторизація</string>
-    <string name="form_registration">Реєстрація</string>
-    <string name="form_login_message_required">Пошта / Парольл обов\'язкові</string>
-    <string name="form_login_message_error">Помилка логіну</string>
-    <string name="form_login_message_success">Успішний вхід</string>
+    <string name="form_firstName">Ім\'я</string>
+    <string name="form_lastName">Прізвище</string>
+    <string name="form_add_car">VIN код</string>
 
     <!-- User Profile -->
     <string name="user_welcome">Доброго дня,</string>
 
+    <!-- Buttons -->
+    <string name="btn_login">Увійти</string>
+    <string name="btn_registration">Зареєструватися</string>
+    <string name="btn_add_car">Додати</string>
     <string name="btn_logout">Вийти</string>
 
+    <!-- Links -->
+    <string name="link_login">Увійти</string>
+    <string name="link_registration">Зареєструватися</string>
+
+    <!-- List of chargers -->
     <string name="charger_adapter_id_placeholder">%1$s</string>
     <string name="charger_adapter_code_placeholder">%1$s</string>
     <string name="charger_adapter_country_placeholder">%1$s</string>
     <string name="charger_adapter_city_placeholder">%1$s</string>
     <string name="charger_adapter_street_placeholder">%1$s</string>
 
-    <string name="station_adapter_id_placeholder">%1$s</string>
-    <string name="station_adapter_name_placeholder">%1$s</string>
-    <string name="station_adapter_country_placeholder">%1$s</string>
-    <string name="station_adapter_city_placeholder">%1$s</string>
-    <string name="station_adapter_street_placeholder">%1$s</string>
+    <!-- List of stations -->
+    <string name="service_adapter_id_placeholder">%1$s</string>
+    <string name="service_adapter_name_placeholder">%1$s</string>
+    <string name="service_adapter_country_placeholder">%1$s</string>
+    <string name="service_adapter_city_placeholder">%1$s</string>
+    <string name="service_adapter_street_placeholder">%1$s</string>
 
 </resources>

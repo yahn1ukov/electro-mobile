@@ -1,74 +1,51 @@
 <resources>
     <string name="app_name" translatable="false">Electro</string>
-    <string name="app_email" translatable="false">electro.support@electro.com</string>
 
-    <!-- Messages -->
-    <string name="exit_msg">Do you want to exit?</string>
+    <!-- Titles -->
+    <string name="title_chargers">Chargers</string>
+    <string name="title_services">Services</string>
+    <string name="title_you">You</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_add_car">Add Car</string>
+    <string name="title_login">Login</string>
+    <string name="title_registration">Registration</string>
 
+    <!-- Languages -->
     <string name="language_english_name">English</string>
     <string name="language_ukrainian_name">Ukrainian</string>
 
-    <!-- Navigation Bar -->
-    <string name="menu_navigation_chargers">Chargers</string>
-    <string name="menu_navigation_services">Services</string>
-    <string name="menu_navigation_add_car">Add car</string>
-    <string name="menu_navigation_you">You</string>
-    <string name="menu_navigation_settings">Settings</string>
-
-    <!-- Default List -->
-    <string name="list_id">Id</string>
-    <string name="list_country">Country</string>
-    <string name="list_city">City</string>
-    <string name="list_street">Street</string>
-    <string name="list_zip_code">Zip code</string>
-
-    <!-- List of Chargers -->
-    <string name="list_chargers_code">Code</string>
-
-    <!-- List of Services -->
-    <string name="list_services_name">Name</string>
-
-    <!-- List of Cars -->
-    <string name="list_cars_vin_code">VIN code</string>
-    <string name="list_cars_name">Name</string>
-    <string name="list_cars_model">Model</string>
-
-    <!-- Add Car Form -->
-    <string name="form_add_car_logo">Add Car</string>
-    <string name="form_add_car_input">VIN code</string>
-    <string name="form_add_car_btn">Add</string>
-
-    <!-- Change Language -->
-    <string name="optional_bar_language">Language</string>
-
-    <!-- Login & Registration Form -->
+    <!-- Forms -->
     <string name="form_email">Email</string>
     <string name="form_password">Password</string>
-    <string name="form_register_firstName">First name</string>
-    <string name="form_register_lastName">Last name</string>
-    <string name="form_btn_login">Login</string>
-    <string name="form_btn_register">Register</string>
-    <string name="form_login">Login</string>
-    <string name="form_registration">Registration</string>
-    <string name="form_login_message_required">Email / Password required</string>
-    <string name="form_login_message_error">Login Failed</string>
-    <string name="form_login_message_success">Login Successful</string>
+    <string name="form_firstName">First name</string>
+    <string name="form_lastName">Last name</string>
+    <string name="form_add_car">VIN code</string>
 
     <!-- User Profile -->
     <string name="user_welcome">Welcome,</string>
 
+    <!-- Buttons -->
+    <string name="btn_login">Login</string>
+    <string name="btn_registration">Registration</string>
+    <string name="btn_add_car">Add</string>
     <string name="btn_logout">Logout</string>
 
+    <!-- Links -->
+    <string name="link_login">Login</string>
+    <string name="link_registration">Registration</string>
+
+    <!-- List of chargers -->
     <string name="charger_adapter_id_placeholder">%1$s</string>
     <string name="charger_adapter_code_placeholder">%1$s</string>
     <string name="charger_adapter_country_placeholder">%1$s</string>
     <string name="charger_adapter_city_placeholder">%1$s</string>
     <string name="charger_adapter_street_placeholder">%1$s</string>
 
-    <string name="station_adapter_id_placeholder">%1$s</string>
-    <string name="station_adapter_name_placeholder">%1$s</string>
-    <string name="station_adapter_country_placeholder">%1$s</string>
-    <string name="station_adapter_city_placeholder">%1$s</string>
-    <string name="station_adapter_street_placeholder">%1$s</string>
+    <!-- List of stations -->
+    <string name="service_adapter_id_placeholder">%1$s</string>
+    <string name="service_adapter_name_placeholder">%1$s</string>
+    <string name="service_adapter_country_placeholder">%1$s</string>
+    <string name="service_adapter_city_placeholder">%1$s</string>
+    <string name="service_adapter_street_placeholder">%1$s</string>
 
 </resources>

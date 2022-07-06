@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="ua.nure.andrii.yahniukov.ui.chargers.ChargersFragment"
-        android:label="@string/menu_navigation_chargers"
+        android:label="@string/title_chargers"
         tools:layout="@layout/fragment_chargers">
         <action
             android:id="@+id/to_navigation_charger"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/navigation_charger"
         android:name="ua.nure.andrii.yahniukov.ui.charger.ChargerFragment"
-        android:label="@string/menu_navigation_chargers"
+        android:label="@string/title_chargers"
         tools:layout="@layout/fragment_charger">
         <argument
             android:name="chargerId"
@@ -27,11 +27,16 @@
     <fragment
         android:id="@+id/navigation_settings"
         android:name="ua.nure.andrii.yahniukov.ui.settings.SettingsFragment"
-        android:label="@string/menu_navigation_settings"
+        android:label="@string/title_settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
-        android:id="@+id/navigation_stations"
+        android:id="@+id/navigation_services"
         android:name="ua.nure.andrii.yahniukov.ui.stations.StationsFragment"
-        android:label="@string/menu_navigation_services"
+        android:label="@string/title_services"
         tools:layout="@layout/fragment_stations" />
+    <fragment
+        android:id="@+id/navigation_add_car"
+        android:name="ua.nure.andrii.yahniukov.ui.addCar.AddCarFragment"
+        android:label="@string/title_services"
+        tools:layout="@layout/fragment_add_car" />
 </navigation>

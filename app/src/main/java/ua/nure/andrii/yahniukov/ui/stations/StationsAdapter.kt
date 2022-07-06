@@ -43,23 +43,23 @@ class StationsAdapter(
 
         fun bind(item: StationResponse) {
             binding.listStationItemId.text = context.getString(
-                R.string.station_adapter_id_placeholder,
+                R.string.service_adapter_id_placeholder,
                 item.id.toString()
             )
             binding.listStationItemName.text = context.getString(
-                R.string.station_adapter_name_placeholder,
+                R.string.service_adapter_name_placeholder,
                 item.name
             )
             binding.listStationItemCountry.text = context.getString(
-                R.string.station_adapter_country_placeholder,
+                R.string.service_adapter_country_placeholder,
                 item.country
             )
             binding.listStationItemCity.text = context.getString(
-                R.string.station_adapter_city_placeholder,
+                R.string.service_adapter_city_placeholder,
                 item.city
             )
             binding.listStationItemStreet.text = context.getString(
-                R.string.station_adapter_street_placeholder,
+                R.string.service_adapter_street_placeholder,
                 item.street
             )
 

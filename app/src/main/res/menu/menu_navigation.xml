@@ -4,25 +4,25 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_baseline_battery_charging_full_24"
-        android:title="@string/menu_navigation_chargers" />
+        android:title="@string/title_chargers" />
 
     <item
-        android:id="@+id/navigation_stations"
+        android:id="@+id/navigation_services"
         android:icon="@drawable/ic_baseline_home_repair_service_24"
-        android:title="@string/menu_navigation_services" />
+        android:title="@string/title_services" />
 
     <item
         android:id="@+id/navigation_add_car"
         android:icon="@drawable/ic_baseline_add_24"
-        android:title="@string/menu_navigation_add_car" />
+        android:title="@string/title_add_car" />
     <item
         android:id="@+id/navigation_you"
         android:icon="@drawable/ic_baseline_person_24"
-        android:title="@string/menu_navigation_you" />
+        android:title="@string/title_you" />
 
     <item
         android:id="@+id/navigation_settings"
         android:icon="@drawable/ic_baseline_settings_24"
-        android:title="@string/menu_navigation_settings" />
+        android:title="@string/title_settings" />
 
 </menu>

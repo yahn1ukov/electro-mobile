@@ -16,7 +16,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="50dp"
-            android:text="@string/form_registration"
+            android:text="@string/title_registration"
             android:textAllCaps="true"
             android:textColor="@color/purple"
             android:textSize="26sp"
@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:hint="@string/form_register_firstName"
+            android:hint="@string/form_firstName"
             app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:hint="@string/form_register_lastName"
+            android:hint="@string/form_lastName"
             app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -92,7 +92,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="@string/form_btn_register" />
+            android:text="@string/btn_registration" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -105,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawablePadding="5dp"
-                android:text="@string/form_login"
+                android:text="@string/link_login"
                 android:textAllCaps="true"
                 android:textColor="@color/purple"
                 android:textSize="17sp"

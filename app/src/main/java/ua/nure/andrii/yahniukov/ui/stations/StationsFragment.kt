@@ -39,8 +39,8 @@ class StationsFragment : Fragment(), StationsAdapterListener {
         binding.rcvStations.adapter = adapter
 
         viewModel.getStations()
-        viewModel.stationsLiveData.observe(viewLifecycleOwner) { chargers ->
-            adapter.updateItems(chargers)
+        viewModel.stationsLiveData.observe(viewLifecycleOwner) { stations ->
+            adapter.updateItems(stations)
         }
     }
 

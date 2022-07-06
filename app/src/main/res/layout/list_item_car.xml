@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="20dp"
@@ -17,44 +18,44 @@
             android:id="@+id/list_car_item_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/list_id"
             android:textColor="@color/purple"
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Id" />
 
         <TextView
             android:id="@+id/list_car_item_vin_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:text="@string/list_cars_vin_code"
             android:textColor="@color/purple"
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/list_car_item_id"
-            app:layout_constraintTop_toTopOf="@+id/list_car_item_id" />
+            app:layout_constraintTop_toTopOf="@+id/list_car_item_id"
+            tools:text="VIN code" />
 
         <TextView
             android:id="@+id/list_car_item_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="@string/list_cars_name"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/list_car_item_id"
-            app:layout_constraintTop_toBottomOf="@+id/list_car_item_id" />
+            app:layout_constraintTop_toBottomOf="@+id/list_car_item_id"
+            tools:text="Car name" />
 
         <TextView
             android:id="@+id/list_car_item_model"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:text="@string/list_cars_model"
             android:textSize="14sp"
             app:layout_constraintStart_toEndOf="@+id/list_car_item_name"
-            app:layout_constraintTop_toTopOf="@+id/list_car_item_name" />
+            app:layout_constraintTop_toTopOf="@+id/list_car_item_name"
+            tools:text="Car model" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
