@@ -10,6 +10,10 @@
     <string name="title_login">Вхід</string>
     <string name="title_registration">Реєстрування</string>
 
+    <!-- Messages -->
+    <string name="message_registration">Користувач усішно створений</string>
+    <string name="message_add_car">Електромобіль успішно додано</string>
+
     <!-- Languages -->
     <string name="language_english_name">Англійська</string>
     <string name="language_ukrainian_name">Українська</string>

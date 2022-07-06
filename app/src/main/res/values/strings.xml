@@ -10,6 +10,10 @@
     <string name="title_login">Login</string>
     <string name="title_registration">Registration</string>
 
+    <!-- Messages -->
+    <string name="message_registration">User successfully created</string>
+    <string name="message_add_car">Car successfully added</string>
+
     <!-- Languages -->
     <string name="language_english_name">English</string>
     <string name="language_ukrainian_name">Ukrainian</string>

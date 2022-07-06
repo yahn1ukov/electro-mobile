@@ -3,6 +3,7 @@ package ua.nure.andrii.yahniukov.ui.activities
 import android.content.Intent
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
+import ua.nure.andrii.yahniukov.R
 import ua.nure.andrii.yahniukov.databinding.ActivityRegistrationBinding
 import ua.nure.andrii.yahniukov.extension.showToast
 import ua.nure.andrii.yahniukov.ui.viewModels.RegistrationViewModel
@@ -20,8 +21,8 @@ class RegistrationActivity : BaseActivity() {
 
         viewModel = ViewModelProvider(this)[RegistrationViewModel::class.java]
 
-        viewModel.registrationLiveData.observe(this) { response ->
-            binding.root.showToast(response.message)
+        viewModel.registrationLiveData.observe(this) {
+            binding.root.showToast(resources.getString(R.string.message_registration))
             val intent = Intent(this, LoginActivity::class.java).apply {
                 flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             }
