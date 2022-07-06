@@ -9,10 +9,29 @@
         android:id="@+id/navigation_home"
         android:name="ua.nure.andrii.yahniukov.ui.chargers.ChargersFragment"
         android:label="@string/menu_navigation_chargers"
-        tools:layout="@layout/fragment_chargers" />
+        tools:layout="@layout/fragment_chargers">
+        <action
+            android:id="@+id/to_navigation_charger"
+            app:destination="@id/navigation_charger" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_charger"
+        android:name="ua.nure.andrii.yahniukov.ui.charger.ChargerFragment"
+        android:label="@string/menu_navigation_chargers"
+        tools:layout="@layout/fragment_charger">
+        <argument
+            android:name="chargerId"
+            app:argType="long" />
+    </fragment>
+
     <fragment
         android:id="@+id/navigation_settings"
         android:name="ua.nure.andrii.yahniukov.ui.settings.SettingsFragment"
         android:label="@string/menu_navigation_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/navigation_stations"
+        android:name="ua.nure.andrii.yahniukov.ui.stations.StationsFragment"
+        android:label="@string/menu_navigation_services"
+        tools:layout="@layout/fragment_stations" />
 </navigation>

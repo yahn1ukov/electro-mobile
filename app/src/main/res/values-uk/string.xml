@@ -57,4 +57,16 @@
 
     <string name="btn_logout">Вийти</string>
 
+    <string name="charger_adapter_id_placeholder">%1$s</string>
+    <string name="charger_adapter_code_placeholder">%1$s</string>
+    <string name="charger_adapter_country_placeholder">%1$s</string>
+    <string name="charger_adapter_city_placeholder">%1$s</string>
+    <string name="charger_adapter_street_placeholder">%1$s</string>
+
+    <string name="station_adapter_id_placeholder">%1$s</string>
+    <string name="station_adapter_name_placeholder">%1$s</string>
+    <string name="station_adapter_country_placeholder">%1$s</string>
+    <string name="station_adapter_city_placeholder">%1$s</string>
+    <string name="station_adapter_street_placeholder">%1$s</string>
+
 </resources>

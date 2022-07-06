@@ -7,7 +7,7 @@
         android:title="@string/menu_navigation_chargers" />
 
     <item
-        android:id="@+id/navigation_services"
+        android:id="@+id/navigation_stations"
         android:icon="@drawable/ic_baseline_home_repair_service_24"
         android:title="@string/menu_navigation_services" />
 
