@@ -26,8 +26,8 @@
     <string name="form_add_car">VIN code</string>
 
     <!-- User Profile -->
-    <string name="user_welcome">Welcome, </string>
-    <string name="user_full_name_placeholder">%1$s</string>
+    <string name="user_welcome">Welcome,</string>
+    <string name="user_created">Created:</string>
 
     <!-- Buttons -->
     <string name="btn_login">Login</string>

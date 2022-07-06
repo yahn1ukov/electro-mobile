@@ -12,7 +12,6 @@ import ua.nure.andrii.yahniukov.api.models.responses.ChargerResponse
 class ChargersViewModel : ViewModel() {
     private val compositeDisposable = CompositeDisposable()
     private val apiService = getAuthenticationApiService()
-
     val chargersLiveData = MutableLiveData<List<ChargerResponse>>()
 
     fun getChargers() {

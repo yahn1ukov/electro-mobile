@@ -27,7 +27,7 @@
 
     <!-- User Profile -->
     <string name="user_welcome">Доброго дня, </string>
-    <string name="user_full_name_placeholder">%1$s</string>
+    <string name="user_created">Створенний:</string>
 
     <!-- Buttons -->
     <string name="btn_login">Увійти</string>

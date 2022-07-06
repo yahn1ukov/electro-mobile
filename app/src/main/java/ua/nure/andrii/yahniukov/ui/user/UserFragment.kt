@@ -16,6 +16,7 @@ import ua.nure.andrii.yahniukov.extension.isCurrentLocaleSet
 import ua.nure.andrii.yahniukov.ui.ElectroApp
 import ua.nure.andrii.yahniukov.ui.activities.LoginActivity
 import ua.nure.andrii.yahniukov.ui.activities.SplashActivity
+import java.text.SimpleDateFormat
 import java.util.*
 
 class UserFragment : Fragment() {
@@ -38,6 +39,12 @@ class UserFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        viewModel.getCurrentUser()
+        viewModel.userLiveData.observe(viewLifecycleOwner) { user ->
+            binding.userFullName.text = " " + user.fullName
+            binding.userCreated.text =
+                " " + SimpleDateFormat("dd-MM-yyyy").format(user.createdAt).toString()
+        }
         viewModel.logoutLiveData.observe(viewLifecycleOwner) { success ->
             if (success) {
                 val intent = Intent(requireContext(), LoginActivity::class.java).apply {

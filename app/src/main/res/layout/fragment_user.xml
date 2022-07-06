@@ -20,6 +20,60 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/purple"
+                        android:text="@string/user_welcome" />
+
+                    <TextView
+                        android:id="@+id/user_full_name"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        tools:text=" User" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/user_created" />
+
+                    <TextView
+                        android:id="@+id/user_created"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        tools:text=" Created" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
             <Spinner
                 android:id="@+id/spnLanguage"
                 android:layout_width="match_parent"
