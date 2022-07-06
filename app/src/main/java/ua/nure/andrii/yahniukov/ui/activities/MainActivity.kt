@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_home,
                 R.id.navigation_services,
                 R.id.navigation_add_car,
-                R.id.navigation_you,
-                R.id.navigation_settings
+                R.id.navigation_cars,
+                R.id.navigation_you
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

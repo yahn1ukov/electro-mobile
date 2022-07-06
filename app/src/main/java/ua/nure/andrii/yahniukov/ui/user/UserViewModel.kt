@@ -1,11 +1,11 @@
-package ua.nure.andrii.yahniukov.ui.settings
+package ua.nure.andrii.yahniukov.ui.user
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import io.reactivex.disposables.CompositeDisposable
 import ua.nure.andrii.yahniukov.api.AppPrefs
 
-class SettingsViewModel : ViewModel() {
+class UserViewModel : ViewModel() {
     private val prefs = AppPrefs()
     private val compositeDisposable = CompositeDisposable()
     val logoutLiveData = MutableLiveData<Boolean>()

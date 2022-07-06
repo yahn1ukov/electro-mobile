@@ -5,7 +5,7 @@
     <string name="title_chargers">Станції</string>
     <string name="title_services">СТО</string>
     <string name="title_you">Ви</string>
-    <string name="title_settings">Налаштування</string>
+    <string name="title_cars">Електромобілі</string>
     <string name="title_add_car">Додати електромобіль</string>
     <string name="title_login">Вхід</string>
     <string name="title_registration">Реєстрування</string>
@@ -26,7 +26,8 @@
     <string name="form_add_car">VIN код</string>
 
     <!-- User Profile -->
-    <string name="user_welcome">Доброго дня,</string>
+    <string name="user_welcome">Доброго дня, </string>
+    <string name="user_full_name_placeholder">%1$s</string>
 
     <!-- Buttons -->
     <string name="btn_login">Увійти</string>
@@ -51,5 +52,11 @@
     <string name="service_adapter_country_placeholder">%1$s</string>
     <string name="service_adapter_city_placeholder">%1$s</string>
     <string name="service_adapter_street_placeholder">%1$s</string>
+
+    <!-- List of cars -->
+    <string name="car_adapter_id_placeholder">%1$s</string>
+    <string name="car_adapter_vin_code_placeholder">%1$s</string>
+    <string name="car_adapter_name_placeholder">%1$s</string>
+    <string name="car_adapter_model_placeholder">%1$s</string>
 
 </resources>

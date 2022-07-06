@@ -1,4 +1,4 @@
-package ua.nure.andrii.yahniukov.ui.settings
+package ua.nure.andrii.yahniukov.ui.user
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import ua.nure.andrii.yahniukov.R
-import ua.nure.andrii.yahniukov.databinding.FragmentSettingsBinding
+import ua.nure.andrii.yahniukov.databinding.FragmentUserBinding
 import ua.nure.andrii.yahniukov.extension.forceSetLocale
 import ua.nure.andrii.yahniukov.extension.isCurrentLocaleSet
 import ua.nure.andrii.yahniukov.ui.ElectroApp
@@ -18,21 +18,21 @@ import ua.nure.andrii.yahniukov.ui.activities.LoginActivity
 import ua.nure.andrii.yahniukov.ui.activities.SplashActivity
 import java.util.*
 
-class SettingsFragment : Fragment() {
-    private var _binding: FragmentSettingsBinding? = null
+class UserFragment : Fragment() {
+    private var _binding: FragmentUserBinding? = null
 
     private val binding get() = _binding!!
 
-    private lateinit var viewModel: SettingsViewModel
+    private lateinit var viewModel: UserViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        viewModel = ViewModelProvider(this)[SettingsViewModel::class.java]
+        viewModel = ViewModelProvider(this)[UserViewModel::class.java]
 
-        _binding = FragmentSettingsBinding.inflate(inflater, container, false)
+        _binding = FragmentUserBinding.inflate(inflater, container, false)
         return binding.root
     }
 

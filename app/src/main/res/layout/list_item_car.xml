@@ -26,7 +26,7 @@
             tools:text="Id" />
 
         <TextView
-            android:id="@+id/list_car_item_vin_code"
+            android:id="@+id/list_car_item_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -35,16 +35,6 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/list_car_item_id"
             app:layout_constraintTop_toTopOf="@+id/list_car_item_id"
-            tools:text="VIN code" />
-
-        <TextView
-            android:id="@+id/list_car_item_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="@+id/list_car_item_id"
-            app:layout_constraintTop_toBottomOf="@+id/list_car_item_id"
             tools:text="Car name" />
 
         <TextView
@@ -52,10 +42,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:textSize="14sp"
+            android:textColor="@color/purple"
+            android:textSize="17sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/list_car_item_name"
             app:layout_constraintTop_toTopOf="@+id/list_car_item_name"
             tools:text="Car model" />
+
+        <TextView
+            android:id="@+id/list_car_item_vin_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/list_car_item_id"
+            app:layout_constraintTop_toBottomOf="@+id/list_car_item_id"
+            tools:text="VIN code" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

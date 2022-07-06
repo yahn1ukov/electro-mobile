@@ -16,13 +16,13 @@
         android:icon="@drawable/ic_baseline_add_24"
         android:title="@string/title_add_car" />
     <item
+        android:id="@+id/navigation_cars"
+        android:icon="@drawable/ic_baseline_electric_car_24"
+        android:title="@string/title_cars" />
+
+    <item
         android:id="@+id/navigation_you"
         android:icon="@drawable/ic_baseline_person_24"
         android:title="@string/title_you" />
-
-    <item
-        android:id="@+id/navigation_settings"
-        android:icon="@drawable/ic_baseline_settings_24"
-        android:title="@string/title_settings" />
 
 </menu>

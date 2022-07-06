@@ -25,11 +25,6 @@
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_settings"
-        android:name="ua.nure.andrii.yahniukov.ui.settings.SettingsFragment"
-        android:label="@string/title_settings"
-        tools:layout="@layout/fragment_settings" />
-    <fragment
         android:id="@+id/navigation_services"
         android:name="ua.nure.andrii.yahniukov.ui.stations.StationsFragment"
         android:label="@string/title_services"
@@ -37,6 +32,16 @@
     <fragment
         android:id="@+id/navigation_add_car"
         android:name="ua.nure.andrii.yahniukov.ui.addCar.AddCarFragment"
-        android:label="@string/title_services"
+        android:label="@string/title_add_car"
         tools:layout="@layout/fragment_add_car" />
+    <fragment
+        android:id="@+id/navigation_cars"
+        android:name="ua.nure.andrii.yahniukov.ui.cars.CarsFragment"
+        android:label="@string/title_cars"
+        tools:layout="@layout/fragment_cars" />
+    <fragment
+        android:id="@+id/navigation_you"
+        android:name="ua.nure.andrii.yahniukov.ui.user.UserFragment"
+        android:label="@string/title_you"
+        tools:layout="@layout/fragment_user" />
 </navigation>
