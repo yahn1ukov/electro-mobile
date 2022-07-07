@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ua.nure.andrii.yahniukov.databinding.FragmentStationsBinding
@@ -49,7 +50,8 @@ class StationsFragment : Fragment(), StationsAdapterListener {
         _binding = null
     }
 
-    override fun onStationTap(id: Long) {
-
+    override fun onStationTap(stationId: Long) {
+        val action = StationsFragmentDirections.toNavigationStation(stationId)
+        findNavController().navigate(action)
     }
 }

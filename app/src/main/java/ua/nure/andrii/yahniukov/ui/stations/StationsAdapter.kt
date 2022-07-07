@@ -71,5 +71,5 @@ class StationsAdapter(
 }
 
 interface StationsAdapterListener {
-    fun onStationTap(id: Long)
+    fun onStationTap(stationId: Long)
 }

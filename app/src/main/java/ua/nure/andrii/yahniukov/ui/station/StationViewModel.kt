@@ -1,4 +1,4 @@
-package ua.nure.andrii.yahniukov.ui.charger
+package ua.nure.andrii.yahniukov.ui.station
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -8,30 +8,30 @@ import io.reactivex.rxkotlin.addTo
 import io.reactivex.schedulers.Schedulers
 import ua.nure.andrii.yahniukov.api.getAuthenticationApiService
 import ua.nure.andrii.yahniukov.api.models.requests.ComplaintRequest
-import ua.nure.andrii.yahniukov.api.models.responses.ChargerResponse
 import ua.nure.andrii.yahniukov.api.models.responses.MessageResponse
+import ua.nure.andrii.yahniukov.api.models.responses.StationResponse
 
-class ChargerViewModel : ViewModel() {
+class StationViewModel : ViewModel() {
     private val compositeDisposable = CompositeDisposable()
     private val apiService = getAuthenticationApiService()
-    val chargerLiveData = MutableLiveData<ChargerResponse>()
+    val stationLiveData = MutableLiveData<StationResponse>()
     val complaintLiveData = MutableLiveData<MessageResponse>()
 
-    fun getCharger(chargerId: Long) {
-        apiService.getCharger(chargerId)
+    fun getStation(stationId: Long) {
+        apiService.getStation(stationId)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe({ charger ->
-                chargerLiveData.value = charger
+            .subscribe({ station ->
+                stationLiveData.value = station
             }, {
 
             })
             .addTo(compositeDisposable)
     }
 
-    fun createComplaintUserCharger(chargerId: Long, description: String) {
+    fun createComplaintUserStation(stationId: Long, description: String) {
         val request = ComplaintRequest(description)
-        apiService.createComplaintUserCharger(chargerId, request)
+        apiService.createComplaintUserStation(stationId, request)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({ response ->

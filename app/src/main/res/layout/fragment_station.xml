@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.charger.ChargerFragment">
+    tools:context=".ui.station.StationFragment">
 
     <TextView
-        android:id="@+id/charger_code"
+        android:id="@+id/station_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -17,140 +17,140 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Code" />
+        tools:text="Name" />
 
     <TextView
-        android:id="@+id/charger_country"
+        android:id="@+id/station_country"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintEnd_toStartOf="@+id/charger_code"
+        app:layout_constraintEnd_toStartOf="@+id/station_name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/charger_code"
+        app:layout_constraintTop_toBottomOf="@+id/station_name"
         tools:text="Country" />
 
     <TextView
-        android:id="@+id/charger_city"
+        android:id="@+id/station_city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/charger_code"
-        app:layout_constraintTop_toBottomOf="@+id/charger_code"
+        app:layout_constraintStart_toEndOf="@+id/station_name"
+        app:layout_constraintTop_toBottomOf="@+id/station_name"
         tools:text="City" />
 
     <TextView
-        android:id="@+id/charger_street"
+        android:id="@+id/station_street"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/charger_country"
-        app:layout_constraintTop_toBottomOf="@+id/charger_country"
+        app:layout_constraintStart_toStartOf="@+id/station_country"
+        app:layout_constraintTop_toBottomOf="@+id/station_country"
         tools:text="Street" />
 
     <TextView
-        android:id="@+id/charger_zip_code"
+        android:id="@+id/station_zip_code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/charger_city"
-        app:layout_constraintTop_toBottomOf="@+id/charger_city"
+        app:layout_constraintStart_toStartOf="@+id/station_city"
+        app:layout_constraintTop_toBottomOf="@+id/station_city"
         tools:text="Zip code" />
 
     <TextView
-        android:id="@+id/charger_is_fast"
+        android:id="@+id/station_car_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/charger_street"
-        app:layout_constraintTop_toBottomOf="@+id/charger_street"
-        tools:text="isFast" />
+        app:layout_constraintStart_toStartOf="@+id/station_street"
+        app:layout_constraintTop_toBottomOf="@+id/station_street"
+        tools:text="Car name" />
 
     <TextView
-        android:id="@+id/charger_is_pay"
+        android:id="@+id/station_car_model"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/charger_zip_code"
-        app:layout_constraintTop_toBottomOf="@+id/charger_zip_code"
-        tools:text="isPay" />
+        app:layout_constraintStart_toStartOf="@+id/station_zip_code"
+        app:layout_constraintTop_toBottomOf="@+id/station_zip_code"
+        tools:text="Car model" />
 
     <TextView
-        android:id="@+id/charger_price_of_per_hour"
+        android:id="@+id/station_all_place"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/charger_is_fast"
-        app:layout_constraintTop_toBottomOf="@+id/charger_is_fast"
-        tools:text="Price" />
+        app:layout_constraintStart_toStartOf="@+id/station_car_name"
+        app:layout_constraintTop_toBottomOf="@+id/station_car_name"
+        tools:text="App places" />
 
     <TextView
-        android:id="@+id/charger_type_connector"
+        android:id="@+id/station_free_place"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/charger_is_pay"
-        app:layout_constraintTop_toBottomOf="@+id/charger_is_pay"
-        tools:text="Type connector" />
+        app:layout_constraintStart_toStartOf="@+id/station_car_model"
+        app:layout_constraintTop_toBottomOf="@+id/station_car_model"
+        tools:text="Free places" />
 
     <TextView
-        android:id="@+id/charger_time_from"
+        android:id="@+id/station_time_from"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/charger_price_of_per_hour"
-        app:layout_constraintTop_toBottomOf="@+id/charger_price_of_per_hour"
+        app:layout_constraintStart_toStartOf="@+id/station_all_place"
+        app:layout_constraintTop_toBottomOf="@+id/station_all_place"
         tools:text="Time from" />
 
     <TextView
-        android:id="@+id/charger_time_to"
+        android:id="@+id/station_time_to"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/charger_type_connector"
-        app:layout_constraintTop_toBottomOf="@+id/charger_type_connector"
+        app:layout_constraintStart_toStartOf="@+id/station_free_place"
+        app:layout_constraintTop_toBottomOf="@+id/station_free_place"
         tools:text="Time to" />
 
     <TextView
-        android:id="@+id/charger_company"
+        android:id="@+id/station_company"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/charger_time_from"
-        app:layout_constraintTop_toBottomOf="@+id/charger_time_from"
+        app:layout_constraintStart_toStartOf="@+id/station_time_from"
+        app:layout_constraintTop_toBottomOf="@+id/station_time_from"
         tools:text="Company" />
 
     <TextView
-        android:id="@+id/charger_created"
+        android:id="@+id/station_middle_price_for_per_hour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/charger_time_to"
-        app:layout_constraintTop_toBottomOf="@+id/charger_time_to"
-        tools:text="Created" />
+        app:layout_constraintStart_toStartOf="@+id/station_time_to"
+        app:layout_constraintTop_toBottomOf="@+id/station_time_to"
+        tools:text="Price" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -184,7 +184,7 @@
             app:startIconDrawable="@drawable/ic_baseline_report_24">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/form_complaint_charger_description"
+                android:id="@+id/form_complaint_station_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text" />
@@ -192,13 +192,12 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/form_complaint_charger_btn"
+            android:id="@+id/form_complaint_station_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="@string/btn_apply" />
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,7 +29,11 @@
         android:id="@+id/navigation_services"
         android:name="ua.nure.andrii.yahniukov.ui.stations.StationsFragment"
         android:label="@string/title_services"
-        tools:layout="@layout/fragment_stations" />
+        tools:layout="@layout/fragment_stations">
+        <action
+            android:id="@+id/to_navigation_station"
+            app:destination="@id/navigation_station" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_add_car"
         android:name="ua.nure.andrii.yahniukov.ui.addCar.AddCarFragment"
@@ -45,4 +49,13 @@
         android:name="ua.nure.andrii.yahniukov.ui.user.UserFragment"
         android:label="@string/title_you"
         tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/navigation_station"
+        android:name="ua.nure.andrii.yahniukov.ui.station.StationFragment"
+        android:label="@string/title_services"
+        tools:layout="@layout/fragment_station">
+        <argument
+            android:name="stationId"
+            app:argType="long" />
+    </fragment>
 </navigation>

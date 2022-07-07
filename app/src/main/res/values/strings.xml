@@ -16,6 +16,7 @@
     <!-- Messages -->
     <string name="message_registration">User successfully created</string>
     <string name="message_add_car">Car successfully added</string>
+    <string name="message_complaint">Complaint successfully created</string>
 
     <!-- Languages -->
     <string name="language_english_name">English</string>

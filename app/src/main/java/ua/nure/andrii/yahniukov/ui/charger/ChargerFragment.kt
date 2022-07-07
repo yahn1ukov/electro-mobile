@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
+import ua.nure.andrii.yahniukov.R
 import ua.nure.andrii.yahniukov.databinding.FragmentChargerBinding
+import ua.nure.andrii.yahniukov.extension.showToast
 
 class ChargerFragment : Fragment() {
 
@@ -26,6 +28,15 @@ class ChargerFragment : Fragment() {
         _binding = FragmentChargerBinding.inflate(inflater, container, false)
         viewModel = ViewModelProvider(this)[ChargerViewModel::class.java]
         viewModel.getCharger(args.chargerId)
+
+        binding.formComplaintChargerBtn.setOnClickListener {
+            viewModel.createComplaintUserCharger(
+                args.chargerId,
+                binding.formComplaintChargerDescription.text.toString()
+            )
+            binding.root.showToast(requireContext().getString(R.string.message_complaint))
+        }
+
         return binding.root
     }
 
@@ -42,8 +53,6 @@ class ChargerFragment : Fragment() {
             binding.chargerPriceOfPerHour.text = charger.priceOfPerHour.toString()
             binding.chargerTypeConnector.text = charger.typeConnector
             binding.chargerCompany.text = charger.company
-//            binding.chargerCreated.text =
-//                SimpleDateFormat("dd-MM-yyyy").format(charger.createdAt).toString()
         }
     }
 }
