@@ -6,12 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import ua.nure.andrii.yahniukov.R
 import ua.nure.andrii.yahniukov.databinding.FragmentChargerBinding
-import ua.nure.andrii.yahniukov.extension.showToast
 
-class ChargerFragment : Fragment() {
+class ChargerFragment : Fragment(), ChargerListener {
 
     private var _binding: FragmentChargerBinding? = null
 
@@ -29,12 +28,8 @@ class ChargerFragment : Fragment() {
         viewModel = ViewModelProvider(this)[ChargerViewModel::class.java]
         viewModel.getCharger(args.chargerId)
 
-        binding.formComplaintChargerBtn.setOnClickListener {
-            viewModel.createComplaintUserCharger(
-                args.chargerId,
-                binding.formComplaintChargerDescription.text.toString()
-            )
-            binding.root.showToast(requireContext().getString(R.string.message_complaint))
+        binding.chargerComplaintBtn.setOnClickListener {
+            onChargerTap(args.chargerId)
         }
 
         return binding.root
@@ -54,5 +49,10 @@ class ChargerFragment : Fragment() {
             binding.chargerTypeConnector.text = charger.typeConnector
             binding.chargerCompany.text = charger.company
         }
+    }
+
+    override fun onChargerTap(chargerId: Long) {
+        val action = ChargerFragmentDirections.toNavigationChargerComplaint(chargerId)
+        findNavController().navigate(action)
     }
 }

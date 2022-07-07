@@ -23,6 +23,9 @@
         <argument
             android:name="chargerId"
             app:argType="long" />
+        <action
+            android:id="@+id/to_navigation_charger_complaint"
+            app:destination="@id/navigation_charger_complaint" />
     </fragment>
 
     <fragment
@@ -61,6 +64,9 @@
         <argument
             android:name="stationId"
             app:argType="long" />
+        <action
+            android:id="@+id/to_navigation_station_complaint"
+            app:destination="@id/navigation_station_complaint" />
     </fragment>
     <fragment
         android:id="@+id/navigation_car"
@@ -69,6 +75,24 @@
         tools:layout="@layout/fragment_car">
         <argument
             android:name="carId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_charger_complaint"
+        android:name="ua.nure.andrii.yahniukov.ui.complaintUserCharger.ComplaintUserChargerFragment"
+        android:label="@string/title_complaint"
+        tools:layout="@layout/fragment_complaint_user_charger">
+        <argument
+            android:name="chargerId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_station_complaint"
+        android:name="ua.nure.andrii.yahniukov.ui.complaintUserStation.ComplaintUserStationFragment"
+        android:label="@string/title_complaint"
+        tools:layout="@layout/fragment_complaint_user_station">
+        <argument
+            android:name="stationId"
             app:argType="long" />
     </fragment>
 </navigation>

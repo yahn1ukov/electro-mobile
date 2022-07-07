@@ -68,10 +68,27 @@
     <string name="car_adapter_name_placeholder">%1$s</string>
     <string name="car_adapter_model_placeholder">%1$s</string>
 
+    <!-- Maintenance -->
+    <string name="maintenance_country_placeholder">Країна:</string>
+    <string name="maintenance_city_placeholder">Місто:</string>
+    <string name="maintenance_street_placeholder">Вулиця:</string>
+    <string name="maintenance_zip_code_placeholder">Поштовий індекс:</string>
+    <string name="maintenance_company_placeholder">Компанія:</string>
+    <string name="maintenance_time_from_placeholder">Час з:</string>
+    <string name="maintenance_time_to_placeholder">Час до:</string>
+    <string name="maintenance_price_placeholder">Ціна:</string>
+    <string name="maintenance_type_connector_placeholder">Тип з\'єднувача:</string>
+    <string name="maintenance_is_fast_placeholder">Потужність:</string>
+    <string name="maintenance_is_pay_placeholder">Платна:</string>
+    <string name="maintenance_car_name_placeholder">Назва електромобіля:</string>
+    <string name="maintenance_car_model_placeholder">Назва моделі:</string>
+    <string name="maintenance_all_places_placeholder">Усього місць:</string>
+    <string name="maintenance_free_places_placeholder">Вільних місць:</string>
+
     <!-- Car -->
     <string name="car_vin_code_placeholder">VIN код:</string>
     <string name="car_mileage_placeholder">Пробіг:</string>
-    <string name="car_type_connector_placeholder">Тип з\'єднувач:</string>
-    <string name="car_percentage_of_charge">Батарея:</string>
+    <string name="car_type_connector_placeholder">Тип з\'єднувача:</string>
+    <string name="car_percentage_of_charge_placeholder">Батарея:</string>
 
 </resources>

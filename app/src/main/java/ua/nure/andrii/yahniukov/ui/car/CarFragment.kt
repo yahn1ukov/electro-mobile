@@ -43,7 +43,7 @@ class CarFragment : Fragment() {
             binding.carItemVinCode.text = car.vinCode
             binding.carItemMileage.text = car.mileage.toString()
             binding.carItemTypeConnector.text = car.typeConnector
-            binding.carItemBattery.text = car.percentageOfCharge.toString()
+            binding.carItemBattery.text = car.percentageOfCharge.toString() + "%"
         }
     }
 }

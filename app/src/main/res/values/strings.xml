@@ -68,10 +68,27 @@
     <string name="car_adapter_name_placeholder">%1$s</string>
     <string name="car_adapter_model_placeholder">%1$s</string>
 
+    <!-- Maintenance -->
+    <string name="maintenance_country_placeholder">Country:</string>
+    <string name="maintenance_city_placeholder">City:</string>
+    <string name="maintenance_street_placeholder">Street:</string>
+    <string name="maintenance_zip_code_placeholder">Zip code:</string>
+    <string name="maintenance_company_placeholder">Company:</string>
+    <string name="maintenance_time_from_placeholder">Time from:</string>
+    <string name="maintenance_time_to_placeholder">Time to:</string>
+    <string name="maintenance_price_placeholder">Price:</string>
+    <string name="maintenance_type_connector_placeholder">Type connector:</string>
+    <string name="maintenance_is_fast_placeholder">Power:</string>
+    <string name="maintenance_is_pay_placeholder">Pay:</string>
+    <string name="maintenance_car_name_placeholder">Car name:</string>
+    <string name="maintenance_car_model_placeholder">Car model:</string>
+    <string name="maintenance_all_places_placeholder">All places:</string>
+    <string name="maintenance_free_places_placeholder">Free places:</string>
+
     <!-- Car -->
     <string name="car_vin_code_placeholder">VIN code:</string>
     <string name="car_mileage_placeholder">Mileage:</string>
     <string name="car_type_connector_placeholder">Type connector:</string>
-    <string name="car_percentage_of_charge">Battery:</string>
+    <string name="car_percentage_of_charge_placeholder">Battery:</string>
 
 </resources>

@@ -1,4 +1,4 @@
-package ua.nure.andrii.yahniukov.ui.station
+package ua.nure.andrii.yahniukov.ui.complaintUserStation
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -9,25 +9,11 @@ import io.reactivex.schedulers.Schedulers
 import ua.nure.andrii.yahniukov.api.getAuthenticationApiService
 import ua.nure.andrii.yahniukov.api.models.requests.ComplaintRequest
 import ua.nure.andrii.yahniukov.api.models.responses.MessageResponse
-import ua.nure.andrii.yahniukov.api.models.responses.StationResponse
 
-class StationViewModel : ViewModel() {
+class ComplaintUserStationViewModel : ViewModel() {
     private val compositeDisposable = CompositeDisposable()
     private val apiService = getAuthenticationApiService()
     val complaintLiveData = MutableLiveData<MessageResponse>()
-    val stationLiveData = MutableLiveData<StationResponse>()
-
-    fun getStation(stationId: Long) {
-        apiService.getStation(stationId)
-            .subscribeOn(Schedulers.io())
-            .observeOn(AndroidSchedulers.mainThread())
-            .subscribe({ station ->
-                stationLiveData.value = station
-            }, {
-
-            })
-            .addTo(compositeDisposable)
-    }
 
     fun createComplaintUserStation(stationId: Long, description: String) {
         val request = ComplaintRequest(description)

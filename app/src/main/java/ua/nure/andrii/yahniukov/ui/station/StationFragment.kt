@@ -6,12 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import ua.nure.andrii.yahniukov.R
 import ua.nure.andrii.yahniukov.databinding.FragmentStationBinding
-import ua.nure.andrii.yahniukov.extension.showToast
 
-class StationFragment : Fragment() {
+class StationFragment : Fragment(), StationListener {
     private var _binding: FragmentStationBinding? = null
 
     private val binding get() = _binding!!
@@ -28,12 +27,8 @@ class StationFragment : Fragment() {
         viewModel = ViewModelProvider(this)[StationViewModel::class.java]
         viewModel.getStation(args.stationId)
 
-        binding.formComplaintStationBtn.setOnClickListener {
-            viewModel.createComplaintUserStation(
-                args.stationId,
-                binding.formComplaintStationDescription.text.toString()
-            )
-            binding.root.showToast(requireContext().getString(R.string.message_complaint))
+        binding.stationComplaintBtn.setOnClickListener {
+            onStationTap(args.stationId)
         }
 
         return binding.root
@@ -57,5 +52,10 @@ class StationFragment : Fragment() {
             binding.stationCompany.text = station.company
             binding.stationMiddlePriceForPerHour.text = station.middlePriceForPerHour.toString()
         }
+    }
+
+    override fun onStationTap(stationId: Long) {
+        val action = StationFragmentDirections.toNavigationStationComplaint(stationId)
+        findNavController().navigate(action)
     }
 }
