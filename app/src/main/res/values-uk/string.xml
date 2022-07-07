@@ -17,6 +17,7 @@
     <string name="message_registration">Користувач усішно створений</string>
     <string name="message_add_car">Електромобіль успішно додано</string>
     <string name="message_complaint">Скарга усішно створена</string>
+    <string name="message_delete_car">Електромобіль успішно видалено</string>
 
     <!-- Languages -->
     <string name="language_english_name">Англійська</string>
@@ -41,6 +42,7 @@
     <string name="btn_add_car">Додати</string>
     <string name="btn_logout">Вийти</string>
     <string name="btn_apply">Подати</string>
+    <string name="btn_delete">Видалити</string>
 
     <!-- Links -->
     <string name="link_login">Увійти</string>
@@ -65,5 +67,11 @@
     <string name="car_adapter_vin_code_placeholder">%1$s</string>
     <string name="car_adapter_name_placeholder">%1$s</string>
     <string name="car_adapter_model_placeholder">%1$s</string>
+
+    <!-- Car -->
+    <string name="car_vin_code_placeholder">VIN код:</string>
+    <string name="car_mileage_placeholder">Пробіг:</string>
+    <string name="car_type_connector_placeholder">Тип з\'єднувач:</string>
+    <string name="car_percentage_of_charge">Батарея:</string>
 
 </resources>

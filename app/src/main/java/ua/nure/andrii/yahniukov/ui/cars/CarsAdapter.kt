@@ -68,5 +68,5 @@ class CarsAdapter(
 }
 
 interface CarsAdapterListener {
-    fun onCarTap(id: Long)
+    fun onCarTap(carId: Long)
 }

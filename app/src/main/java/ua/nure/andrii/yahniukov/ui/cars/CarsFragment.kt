@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ua.nure.andrii.yahniukov.databinding.FragmentCarsBinding
@@ -49,7 +50,8 @@ class CarsFragment : Fragment(), CarsAdapterListener {
         _binding = null
     }
 
-    override fun onCarTap(id: Long) {
-
+    override fun onCarTap(carId: Long) {
+        val action = CarsFragmentDirections.toNavigationCar(carId)
+        findNavController().navigate(action)
     }
 }

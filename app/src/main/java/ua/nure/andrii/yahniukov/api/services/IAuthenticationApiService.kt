@@ -44,5 +44,5 @@ interface IAuthenticationApiService {
     fun addCarToUser(@Body vinCode: CarRequest): Single<MessageResponse>
 
     @DELETE("api/v1/users/current/cars/{carId}/delete")
-    fun deleteCarFromUser(@Path("carId") carId: Long)
+    fun deleteCarFromUser(@Path("carId") carId: Long): Single<Boolean>
 }
