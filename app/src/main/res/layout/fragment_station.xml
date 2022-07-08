@@ -288,7 +288,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/maintenance_price_placeholder"
+        android:text="@string/maintenance_price_average_placeholder"
         android:textColor="@color/purple"
         android:textSize="16sp"
         android:textStyle="bold"

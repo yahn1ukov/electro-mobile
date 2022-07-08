@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit
 
 fun getNoAuthenticationApiService(): INoAuthenticationApiService {
     return Retrofit.Builder()
-        .baseUrl("https://9161-109-87-8-64.eu.ngrok.io/")
+        .baseUrl("https://5006-109-87-8-64.eu.ngrok.io/")
         .addConverterFactory(getConverterFactory())
         .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
         .build()
@@ -22,7 +22,7 @@ fun getNoAuthenticationApiService(): INoAuthenticationApiService {
 
 fun getAuthenticationApiService(): IAuthenticationApiService {
     return Retrofit.Builder()
-        .baseUrl("https://9161-109-87-8-64.eu.ngrok.io/")
+        .baseUrl("https://5006-109-87-8-64.eu.ngrok.io/")
         .addConverterFactory(getConverterFactory())
         .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
         .client(getOkhttpClient())

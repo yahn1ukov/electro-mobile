@@ -76,6 +76,8 @@
     <string name="maintenance_company_placeholder">Компанія:</string>
     <string name="maintenance_time_from_placeholder">Час з:</string>
     <string name="maintenance_time_to_placeholder">Час до:</string>
+    <string name="maintenance_per_hour_placeholder">/годину</string>
+    <string name="maintenance_price_average_placeholder">Ціна (середня):</string>
     <string name="maintenance_price_placeholder">Ціна:</string>
     <string name="maintenance_type_connector_placeholder">Тип з\'єднувача:</string>
     <string name="maintenance_is_fast_placeholder">Потужність:</string>
@@ -84,6 +86,10 @@
     <string name="maintenance_car_model_placeholder">Назва моделі:</string>
     <string name="maintenance_all_places_placeholder">Усього місць:</string>
     <string name="maintenance_free_places_placeholder">Вільних місць:</string>
+    <string name="maintenance_power_low_placeholder">Повільна</string>
+    <string name="maintenance_power_fast_placeholder">Швидка</string>
+    <string name="maintenance_yes_placeholder">Так</string>
+    <string name="maintenance_no_placeholder">Ні</string>
 
     <!-- Car -->
     <string name="car_vin_code_placeholder">VIN код:</string>

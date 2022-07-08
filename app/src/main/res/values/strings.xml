@@ -76,6 +76,8 @@
     <string name="maintenance_company_placeholder">Company:</string>
     <string name="maintenance_time_from_placeholder">Time from:</string>
     <string name="maintenance_time_to_placeholder">Time to:</string>
+    <string name="maintenance_per_hour_placeholder">/hour</string>
+    <string name="maintenance_price_average_placeholder">Price (average):</string>
     <string name="maintenance_price_placeholder">Price:</string>
     <string name="maintenance_type_connector_placeholder">Type connector:</string>
     <string name="maintenance_is_fast_placeholder">Power:</string>
@@ -84,6 +86,10 @@
     <string name="maintenance_car_model_placeholder">Car model:</string>
     <string name="maintenance_all_places_placeholder">All places:</string>
     <string name="maintenance_free_places_placeholder">Free places:</string>
+    <string name="maintenance_power_low_placeholder">Low</string>
+    <string name="maintenance_power_fast_placeholder">Fast</string>
+    <string name="maintenance_yes_placeholder">Yes</string>
+    <string name="maintenance_no_placeholder">No</string>
 
     <!-- Car -->
     <string name="car_vin_code_placeholder">VIN code:</string>

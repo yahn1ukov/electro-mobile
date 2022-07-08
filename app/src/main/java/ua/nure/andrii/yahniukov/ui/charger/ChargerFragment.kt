@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import ua.nure.andrii.yahniukov.R
 import ua.nure.andrii.yahniukov.databinding.FragmentChargerBinding
 
 class ChargerFragment : Fragment(), ChargerListener {
@@ -43,11 +44,26 @@ class ChargerFragment : Fragment(), ChargerListener {
             binding.chargerCity.text = charger.city
             binding.chargerStreet.text = charger.street
             binding.chargerZipCode.text = charger.zipCode.toString()
-            binding.chargerIsFast.text = charger.isFast.toString()
-            binding.chargerIsPay.text = charger.isPay.toString()
-            binding.chargerPriceOfPerHour.text = charger.priceOfPerHour.toString()
+            if (charger.isFast) {
+                binding.chargerIsFast.text =
+                    resources.getText(R.string.maintenance_power_fast_placeholder)
+            } else {
+                binding.chargerIsFast.text =
+                    resources.getText(R.string.maintenance_power_low_placeholder)
+            }
+            if (charger.isPay) {
+                binding.chargerIsPay.text = resources.getText(R.string.maintenance_yes_placeholder)
+            } else {
+                binding.chargerIsPay.text = resources.getText(R.string.maintenance_no_placeholder)
+            }
+            binding.chargerPriceOfPerHour.text =
+                charger.priceOfPerHour.toString() + resources.getString(
+                    R.string.maintenance_per_hour_placeholder
+                )
             binding.chargerTypeConnector.text = charger.typeConnector
             binding.chargerCompany.text = charger.company
+            binding.chargerTimeFrom.text = charger.timeFrom
+            binding.chargerTimeTo.text = charger.timeTo
         }
     }
 

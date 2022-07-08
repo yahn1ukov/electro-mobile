@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import ua.nure.andrii.yahniukov.R
 import ua.nure.andrii.yahniukov.databinding.FragmentStationBinding
 
 class StationFragment : Fragment(), StationListener {
@@ -50,7 +51,10 @@ class StationFragment : Fragment(), StationListener {
             binding.stationTimeFrom.text = station.timeFrom
             binding.stationTimeTo.text = station.timeTo
             binding.stationCompany.text = station.company
-            binding.stationMiddlePriceForPerHour.text = station.middlePriceForPerHour.toString()
+            binding.stationMiddlePriceForPerHour.text =
+                station.middlePriceForPerHour.toString() + resources.getString(
+                    R.string.maintenance_per_hour_placeholder
+                )
         }
     }
 
